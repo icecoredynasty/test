@@ -1,30 +1,125 @@
+/* ===================================
+   ICECORE HERO
+=================================== */
+
+.icecore-hero {
+
+    position: relative;
+
+    height: 380px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #eef4fb;
+
+}
+
+.icecore-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("/test/assets/images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    opacity:.35;
+
+}
+
+.icecore-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.95) 0%,
+        rgba(255,255,255,.80) 35%,
+        rgba(255,255,255,.20) 70%,
+        rgba(255,255,255,0) 100%
+    );
+
+}
+
+.icecore-hero__content{
+
+    position:relative;
+
+    z-index:10;
+
+    max-width:520px;
+
+    margin-left:7%;
+
+}
+
+.icecore-hero h1{
+
+    font-size:72px;
+
+    line-height:.92;
+
+    margin:0;
+
+    font-weight:900;
+
+    letter-spacing:-2px;
+
+}
+
+.icecore-hero h1 span{
+
+    color:#0d5be1;
+
+}
+
+.icecore-hero p{
+
+    margin-top:20px;
+
+    font-size:24px;
+
+    color:#444;
+
+}
+
 .icecore-button{
 
-display:inline-block;
+    display:inline-block;
 
-margin-top:28px;
+    margin-top:30px;
 
-padding:14px 26px;
+    padding:15px 32px;
 
-background:#0d5be1;
+    background:#0d5be1;
 
-color:#fff;
+    color:white;
 
-font-weight:700;
+    text-decoration:none;
 
-border-radius:4px;
+    font-weight:700;
 
-text-decoration:none;
-
-transition:.2s;
+    border-radius:4px;
 
 }
 
 .icecore-button:hover{
 
-background:#003ea7;
+    background:#003da5;
 
-color:#fff;
+    color:white;
 
 }
-
