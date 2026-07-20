@@ -6,7 +6,7 @@
 
     position:relative;
 
-    height:360px;
+    height:315px;
 
     display:flex;
 
@@ -63,7 +63,7 @@
 
 .icecore-hero h1{
 
-    font-size:58px;
+    font-size:52px;
 
     line-height:.92;
 
@@ -120,5 +120,19 @@
     background:#0040b8;
 
     color:#fff;
+
+}
+
+.hero-line{
+
+    width:90px;
+
+    height:4px;
+
+    background:#0d5be1;
+
+    margin:12px 0 14px;
+
+    border-radius:2px;
 
 }
