@@ -78,18 +78,6 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
 
-footer:
-  links:
-    - label: "Yahoo"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: 
-      icon: 
-      url: "
-    - label: 
-      icon: 
-      url: 
-
 defaults:
   # _posts
   - scope:
