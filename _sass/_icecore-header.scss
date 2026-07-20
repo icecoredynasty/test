@@ -58,7 +58,7 @@
 
 .greedy-nav{
 
-    height:82px;
+    height:100px;
 
     display:flex;
 
@@ -98,7 +98,7 @@
 
 .greedy-nav__toggle{
 
-    height:82px;
+    height:100px;
 
 }
 
@@ -141,4 +141,9 @@
     max-height:none !important;
     width:auto;
 
+}
+
+.site-logo{
+
+    margin-right:28px;
 }
