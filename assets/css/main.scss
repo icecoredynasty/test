@@ -1,3 +1,15 @@
+---
+# Only the main Sass file needs front matter
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes";
+
+/* ===========================================
+   ICECORE HERO
+=========================================== */
+
 .icecore-hero{
 
     height:520px;
@@ -47,15 +59,13 @@
 
 .icecore-hero h1{
 
-    font-size:4.2rem;
+    font-size:4rem;
 
     line-height:.95;
 
     font-weight:900;
 
     margin-bottom:1rem;
-
-    letter-spacing:-2px;
 
 }
 
@@ -64,24 +74,3 @@
     color:#0057d8;
 
 }
-
-.icecore-hero p{
-
-    font-size:1.2rem;
-
-    max-width:480px;
-
-    margin-bottom:2rem;
-
-}
-
-.icecore-buttons{
-
-    display:flex;
-
-    gap:1rem;
-
-    align-items:center;
-
-}
-
