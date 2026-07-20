@@ -1,1 +1,271 @@
+/* ===================================
+   ICECORE HOME
+=================================== */
 
+.icecore-home{
+
+    max-width:1400px;
+
+    margin:60px auto;
+
+    padding:0 30px;
+
+}
+
+/* ==========================
+   TOP GRID
+========================== */
+
+.icecore-home-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+/* ==========================
+   FEATURE STORY
+========================== */
+
+.feature-story{
+
+    background:#fff;
+
+}
+
+.feature-category{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    padding:6px 12px;
+
+    background:#0d5be1;
+
+    color:#fff;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    border-radius:3px;
+
+}
+
+.feature-story h2{
+
+    font-size:42px;
+
+    line-height:1.1;
+
+    margin:0 0 18px;
+
+    font-weight:800;
+
+}
+
+.feature-story p{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    max-width:720px;
+
+}
+
+.feature-story a{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    color:#0d5be1;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.feature-story a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================
+   LATEST NEWS
+========================== */
+
+.latest-news{
+
+    background:#fafafa;
+
+    border:1px solid #ececec;
+
+    border-radius:8px;
+
+    padding:28px;
+
+}
+
+.latest-news h3{
+
+    margin:0 0 25px;
+
+    font-size:22px;
+
+}
+
+.news-item{
+
+    padding:14px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.news-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.news-item span{
+
+    display:block;
+
+    color:#888;
+
+    font-size:12px;
+
+    margin-bottom:4px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.news-item a{
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+}
+
+.news-item a:hover{
+
+    color:#0d5be1;
+
+}
+
+/* ==========================
+   HIGHLIGHTS
+========================== */
+
+.highlights{
+
+    margin-top:70px;
+
+}
+
+.highlights h3{
+
+    font-size:28px;
+
+    margin-bottom:28px;
+
+}
+
+.highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.highlight-card{
+
+    background:#fff;
+
+    border:1px solid #ececec;
+
+    border-radius:10px;
+
+    padding:28px;
+
+    transition:.25s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 14px 35px rgba(0,0,0,.08);
+
+}
+
+.highlight-card h4{
+
+    margin:0 0 14px;
+
+    font-size:22px;
+
+}
+
+.highlight-card p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:900px){
+
+    .icecore-home-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .highlight-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .feature-story h2{
+
+        font-size:34px;
+
+    }
+
+}
