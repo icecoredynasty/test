@@ -546,3 +546,75 @@
 
 }
 
+/* ======================================
+   CALENDAR
+====================================== */
+
+.calendar-event{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.calendar-date{
+
+    width:62px;
+
+    background:#0d5be1;
+
+    color:white;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    padding:8px 0;
+
+    flex-shrink:0;
+
+}
+
+.calendar-date span{
+
+    display:block;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+}
+
+.calendar-date strong{
+
+    display:block;
+
+    font-size:26px;
+
+    line-height:1.1;
+
+}
+
+.calendar-info h4{
+
+    margin:0;
+
+    font-size:18px;
+
+}
+
+.calendar-info p{
+
+    margin:6px 0 0;
+
+    color:#777;
+
+}
+
