@@ -1,9 +1,16 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Home"
+    url: /
+
+  - title: "Teams"
+    url: /teams/
+
+  - title: "News"
+    url: /news/
+
+  - title: "League"
+
+  - title: "Stats"
+
   - title: "About"
     url: /about/
