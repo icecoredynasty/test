@@ -1,76 +1,29 @@
-/* ===========================
-   HERO
-=========================== */
+.icecore-button{
 
-.icecore-hero{
+display:inline-block;
 
-    height:360px;
+margin-top:28px;
 
-    background-image:url("../images/hero.jpg");
+padding:14px 26px;
 
-    background-size:cover;
+background:#0d5be1;
 
-    background-position:center;
+color:#fff;
 
-    display:flex;
+font-weight:700;
 
-    align-items:center;
+border-radius:4px;
 
-    position:relative;
+text-decoration:none;
 
-}
-
-.icecore-hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(
-      90deg,
-      rgba(255,255,255,.90),
-      rgba(255,255,255,.60),
-      rgba(255,255,255,0)
-    );
+transition:.2s;
 
 }
 
-.icecore-hero__content{
+.icecore-button:hover{
 
-    position:relative;
+background:#003ea7;
 
-    z-index:2;
-
-    max-width:480px;
-
-    margin-left:8%;
-
-}
-
-.icecore-hero h1{
-
-    font-size:68px;
-
-    line-height:.9;
-
-    margin:0;
-
-    font-weight:900;
-
-}
-
-.icecore-hero h1 span{
-
-    color:#0057d8;
-
-}
-
-.icecore-hero p{
-
-    font-size:22px;
-
-    margin-top:18px;
+color:#fff;
 
 }
