@@ -20,10 +20,14 @@
 
 .icecore-hero::before{
 
-    background-image:url("/test/assets/images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:url("/test/assets/images/hero.jpg") center center/cover no-repeat;
+
+    opacity:.35;
 
 }
 
