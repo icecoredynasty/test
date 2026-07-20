@@ -1,27 +1,4 @@
 ---
-layout: default
+layout: icecore-home
 title: Home
 ---
-
-{% include icecore/hero.html %}
-
-<div class="page__inner-wrap">
-  <section style="margin-top:3rem;">
-
-    <h2>Recent Posts</h2>
-
-    {% for post in site.posts limit:6 %}
-      <article style="margin-bottom:2rem;border-bottom:1px solid #ddd;padding-bottom:1rem;">
-        <h3>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </h3>
-
-        <p>{{ post.excerpt | strip_html | truncate:150 }}</p>
-
-      </article>
-    {% endfor %}
-
-  </section>
-</div>
