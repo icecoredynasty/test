@@ -2,19 +2,19 @@
    ICECORE HERO
 =================================== */
 
-.icecore-hero {
+.icecore-hero{
 
-    position: relative;
+    position:relative;
 
-    height: 380px;
+    height:360px;
 
-    overflow: hidden;
+    display:flex;
 
-    display: flex;
+    align-items:center;
 
-    align-items: center;
+    overflow:hidden;
 
-    background: #eef4fb;
+    background:#eef4fb;
 
 }
 
@@ -26,11 +26,7 @@
 
     inset:0;
 
-    background-image:url("/test/assets/images/hero.jpg");
-
-    background-size:cover;
-
-    background-position:center;
+    background:url("/test/assets/images/hero.jpg") center/cover;
 
     opacity:.35;
 
@@ -45,11 +41,10 @@
     inset:0;
 
     background:linear-gradient(
-        90deg,
-        rgba(255,255,255,.95) 0%,
-        rgba(255,255,255,.80) 35%,
-        rgba(255,255,255,.20) 70%,
-        rgba(255,255,255,0) 100%
+      90deg,
+      rgba(255,255,255,.95),
+      rgba(255,255,255,.75),
+      rgba(255,255,255,0)
     );
 
 }
@@ -58,25 +53,25 @@
 
     position:relative;
 
-    z-index:10;
-
-    max-width:520px;
+    z-index:5;
 
     margin-left:7%;
+
+    max-width:460px;
 
 }
 
 .icecore-hero h1{
 
-    font-size:72px;
+    font-size:58px;
 
     line-height:.92;
 
-    margin:0;
+    letter-spacing:-2px;
 
     font-weight:900;
 
-    letter-spacing:-2px;
+    margin:0;
 
 }
 
@@ -88,11 +83,11 @@
 
 .icecore-hero p{
 
-    margin-top:20px;
+    font-size:18px;
 
-    font-size:24px;
+    margin-top:16px;
 
-    color:#444;
+    color:#4b4b4b;
 
 }
 
@@ -100,26 +95,30 @@
 
     display:inline-block;
 
-    margin-top:30px;
+    margin-top:24px;
 
-    padding:15px 32px;
+    padding:12px 22px;
+
+    border-radius:4px;
 
     background:#0d5be1;
 
-    color:white;
+    color:#fff;
 
-    text-decoration:none;
+    font-size:14px;
 
     font-weight:700;
 
-    border-radius:4px;
+    text-decoration:none;
+
+    transition:.2s;
 
 }
 
 .icecore-button:hover{
 
-    background:#003da5;
+    background:#0040b8;
 
-    color:white;
+    color:#fff;
 
 }
