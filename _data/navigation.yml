@@ -1,16 +1,15 @@
 main:
-  - title: "Home"
-    url: /
+  - title: League
+    url: /league/
 
-  - title: "Teams"
+  - title: Teams
     url: /teams/
 
-  - title: "News"
-    url: /news/
+  - title: Rules
+    url: /rules/
 
-  - title: "League"
+  - title: Journal
+    url: /journal/
 
-  - title: "Stats"
-
-  - title: "About"
-    url: /about/
+  - title: Awards
+    url: /awards/
