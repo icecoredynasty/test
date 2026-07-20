@@ -107,3 +107,8 @@ tag_archive:
   
 atom_feed:
   hide: true
+
+logo: "/assets/images/logo.png"
+masthead_title: ""
+title: ""
+
