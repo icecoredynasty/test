@@ -1,7 +1,7 @@
 {% assign locale = include.locale | default: site.locale %}
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
-<div class="masthead">
+<a class="site-logo" href="{{ '/' | relative_url }}"> <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="IceCore Dynasty"> </a>
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
