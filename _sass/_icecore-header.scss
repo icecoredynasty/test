@@ -40,7 +40,7 @@
 
 .site-logo img{
 
-    height:64px;
+    height:76px;
 
     width:auto;
 
@@ -99,5 +99,31 @@
 .greedy-nav__toggle{
 
     height:82px;
+
+}
+
+.greedy-nav .visible-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:3px;
+
+    background:#0d5be1;
+
+    transition:.25s;
+
+}
+
+.greedy-nav .visible-links a:hover::after{
+
+    width:100%;
 
 }
