@@ -1,109 +1,17 @@
-<section class="icecore-highlights">
+<div class="section-heading">
 
-    <div class="section-heading">
+    <h3>Highlights</h3>
 
-        <h3>Highlights</h3>
+</div>
 
-    </div>
+{% include icecore/components/article-card.html %}
 
-    <article class="highlight-item">
+{% include icecore/components/article-card.html %}
 
-        <div class="highlight-image">
+{% include icecore/components/article-card.html %}
 
-            <img src="/test/assets/images/team1.png" alt="Aurora Foxes">
+{% for post in site.categories.highlights limit:3 %}
 
-        </div>
+    {% include icecore/components/article-card.html post=post %}
 
-        <div class="highlight-content">
-
-            <span class="highlight-category">
-
-                TEAM SPOTLIGHT
-
-            </span>
-
-            <h4>
-
-                Aurora Foxes: Built for Now and the Future
-
-            </h4>
-
-            <div class="highlight-meta">
-
-                May 9, 2027 • 6 min read
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <article class="highlight-item">
-
-        <div class="highlight-image">
-
-            <img src="/test/assets/images/logo.png" alt="Draft">
-
-        </div>
-
-        <div class="highlight-content">
-
-            <span class="highlight-category">
-
-                LEAGUE
-
-            </span>
-
-            <h4>
-
-                2027 Draft Class: Depth, Skill and Potential
-
-            </h4>
-
-            <div class="highlight-meta">
-
-                May 6, 2027 • 5 min read
-
-            </div>
-
-        </div>
-
-    </article>
-
-
-
-    <article class="highlight-item">
-
-        <div class="highlight-image">
-
-            <img src="/test/assets/images/team2.png" alt="Mammoths">
-
-        </div>
-
-        <div class="highlight-content">
-
-            <span class="highlight-category">
-
-                HISTORY
-
-            </span>
-
-            <h4>
-
-                Ancient Mammoths: From Expansion to Icon
-
-            </h4>
-
-            <div class="highlight-meta">
-
-                May 5, 2027 • 7 min read
-
-            </div>
-
-        </div>
-
-    </article>
-
-</section>
+{% endfor %}
