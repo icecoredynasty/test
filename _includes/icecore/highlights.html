@@ -1,17 +1,17 @@
-<div class="section-heading">
+{% include icecore/components/section-heading.html
+title="Highlights"
+%}
 
-    <h3>Highlights</h3>
+{% include icecore/components/article-card.html
+image="/test/assets/images/team1.png"
+title="Aurora Foxes: Built for Now and the Future"
+category="TEAM SPOTLIGHT"
+meta="May 9, 2027 • 6 min read"
+%}
 
-</div>
-
-{% include icecore/components/article-card.html %}
-
-{% include icecore/components/article-card.html %}
-
-{% include icecore/components/article-card.html %}
-
-{% for post in site.categories.highlights limit:3 %}
-
-    {% include icecore/components/article-card.html post=post %}
-
-{% endfor %}
+{% include icecore/components/article-card.html
+image="/test/assets/images/logo.png"
+title="2027 Draft Class: Depth, Skill and Potential"
+category="LEAGUE"
+meta="May 6, 2027 • 5 min read"
+%}
