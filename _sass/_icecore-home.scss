@@ -490,3 +490,59 @@
     font-weight:700;
 
 }
+/* ======================================
+   STAY CONNECTED
+====================================== */
+
+.social-card{
+
+    border:1px solid #ececec;
+
+    border-radius:10px;
+
+    padding:26px;
+
+    background:white;
+
+}
+
+.social-card p{
+
+    margin-top:0;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.social-button{
+
+    display:block;
+
+    margin-top:14px;
+
+    padding:12px;
+
+    text-align:center;
+
+    border:1px solid #0d5be1;
+
+    border-radius:6px;
+
+    color:#0d5be1;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.social-button:hover{
+
+    background:#0d5be1;
+
+    color:white;
+
+}
+
