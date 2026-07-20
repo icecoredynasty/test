@@ -5,16 +5,14 @@
 .masthead{
 
     position:sticky;
-
     top:0;
-
     z-index:999;
 
     background:#fff;
 
     border:0;
 
-    box-shadow:0 1px 12px rgba(0,0,0,.05);
+    box-shadow:0 2px 14px rgba(0,0,0,.05);
 
 }
 
@@ -22,11 +20,11 @@
 
     max-width:1450px;
 
-    height:78px;
-
     margin:auto;
 
-    padding:0 45px;
+    height:82px;
+
+    padding:0 25px;
 
 }
 
@@ -42,15 +40,13 @@
 
 .site-logo img{
 
-    display:block;
-
-    height:44px;
+    height:64px;
 
     width:auto;
 
-}
+    display:block;
 
-/* skryj text IceCore Dynasty */
+}
 
 .site-title{
 
@@ -62,13 +58,13 @@
 
 .greedy-nav{
 
-    background:transparent;
+    height:82px;
 
     display:flex;
 
     align-items:center;
 
-    height:78px;
+    background:transparent;
 
 }
 
@@ -78,13 +74,13 @@
 
     align-items:center;
 
-    gap:38px;
+    gap:42px;
 
 }
 
 .greedy-nav .visible-links a{
 
-    font-size:13px;
+    font-size:15px;
 
     font-weight:700;
 
@@ -94,16 +90,14 @@
 
 }
 
-.greedy-nav .search__toggle{
+.search__toggle{
 
-    margin-left:30px;
+    margin-left:32px;
 
 }
 
-/* hamburger */
-
 .greedy-nav__toggle{
 
-    height:78px;
+    height:82px;
 
 }
