@@ -1,0 +1,86 @@
+.icecore-hero{
+
+    height:520px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:7%;
+
+    background-image:url('/assets/images/hero.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+.icecore-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.92),
+        rgba(255,255,255,.70),
+        rgba(255,255,255,.10)
+    );
+
+}
+
+.icecore-hero__content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:560px;
+
+}
+
+.icecore-hero h1{
+
+    font-size:4.2rem;
+
+    line-height:.95;
+
+    font-weight:900;
+
+    margin-bottom:1rem;
+
+    letter-spacing:-2px;
+
+}
+
+.icecore-hero h1 span{
+
+    color:#0057d8;
+
+}
+
+.icecore-hero p{
+
+    font-size:1.2rem;
+
+    max-width:480px;
+
+    margin-bottom:2rem;
+
+}
+
+.icecore-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+    align-items:center;
+
+}
