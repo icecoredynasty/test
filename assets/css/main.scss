@@ -74,3 +74,70 @@
     color:#0057d8;
 
 }
+/* ==============================
+   ICECORE HEADER
+============================== */
+
+.masthead {
+
+    border:0;
+
+    box-shadow:none;
+
+}
+
+.masthead__inner-wrap{
+
+    max-width:1400px;
+
+    height:90px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+}
+
+.site-logo img{
+
+    height:68px;
+
+    width:auto;
+
+    display:block;
+
+}
+
+.greedy-nav{
+
+    background:transparent;
+
+}
+
+.greedy-nav a{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.greedy-nav .visible-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
