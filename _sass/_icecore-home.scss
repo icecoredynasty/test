@@ -855,11 +855,13 @@
 
 .icecore-footer{
 
-    margin-top:80px;
+    margin-top:60px;
 
-    border-top:1px solid #e6e6e6;
+    padding:18px 24px;
 
-    padding:48px 24px 28px;
+    background:#17395e;
+
+    color:white;
 
 }
 
@@ -871,25 +873,23 @@
 
 }
 
-.footer-brand{
+.footer-top{
 
-    text-align:center;
+    display:flex;
 
-    margin-bottom:28px;
+    align-items:center;
 
-}
+    justify-content:center;
 
-.footer-brand h3{
+    gap:26px;
 
-    margin:0 0 8px;
-
-    letter-spacing:.08em;
+    margin-bottom:12px;
 
 }
 
-.footer-brand p{
+.footer-logo{
 
-    color:#cfdcf6;
+    width:30px;
 
 }
 
@@ -897,29 +897,23 @@
 
     display:flex;
 
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:28px;
-
-    margin-bottom:36px;
+    gap:22px;
 
 }
 
 .footer-links a{
 
-    color:#e4eeff;
+    color:white;
 
     text-decoration:none;
 
-    transition:.2s;
+    font-size:.92rem;
 
 }
 
 .footer-links a:hover{
 
-    color:#7cb5ff;
+    color:#79b0ff;
 
 }
 
@@ -927,23 +921,21 @@
 
     text-align:center;
 
-    font-size:.9rem;
+    font-size:.78rem;
 
-    color:#d8e6ff;
+    color:#d4e1f8;
 
 }
 
 .footer-bottom a{
 
-    color:#666;
-
-    text-decoration:none;
+    color:#d4e1f8;
 
 }
 
 .footer-bottom a:hover{
 
-    color:#0d5be1;
+    color:white;
 
 }
 
