@@ -90,7 +90,7 @@
 
     </article>
 
-</section>
+
 <div class="calendar-hidden" id="calendar-hidden">
 
     <article class="calendar-event">
@@ -159,3 +159,37 @@
     </a>
 
 </div>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const toggle = document.getElementById("calendar-toggle");
+
+    const hidden = document.getElementById("calendar-hidden");
+
+    hidden.style.display = "none";
+
+    toggle.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        if(hidden.style.display === "none"){
+
+            hidden.style.display = "block";
+
+            toggle.innerHTML = "Hide Schedule ▲";
+
+        }else{
+
+            hidden.style.display = "none";
+
+            toggle.innerHTML = "Show 4 More Events ▼";
+
+        }
+
+    });
+
+});
+
+</script>
+</section>
