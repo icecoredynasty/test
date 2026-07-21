@@ -858,3 +858,47 @@
     color:#7cb5ff;
 
 }
+
+.page__footer{
+
+    background:#f7f7f7;
+
+    border-top:1px solid #e5e5e5;
+
+    padding:18px 0;
+
+}
+
+.page__footer-follow{
+
+    text-align:center;
+
+}
+
+.page__footer-follow .social-icons{
+
+    justify-content:center;
+
+}
+
+.page__footer-follow a{
+
+    color:#555;
+
+}
+
+.page__footer-follow a:hover{
+
+    color:#0d5be1;
+
+}
+
+.page__footer-copyright{
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:.8rem;
+
+}
