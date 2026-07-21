@@ -632,6 +632,37 @@
     color:#0d5be1;
 
 }
+.calendar-hidden{
+
+    display:none;
+
+}
+
+.calendar-more{
+
+    margin-top:12px;
+
+}
+
+.calendar-more a{
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-size:.88rem;
+
+    font-weight:500;
+
+    transition:.2s;
+
+}
+
+.calendar-more a:hover{
+
+    color:#0d5be1;
+
+}
 
 .editors-pick h3{
 
