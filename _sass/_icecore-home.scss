@@ -793,17 +793,6 @@
     color:#0d5be1;
 
 }
-.feature-card{
-
-    display:block;
-
-    position:relative;
-
-    color:white;
-
-    text-decoration:none;
-
-}
 
 .feature-card:hover{
 
@@ -960,5 +949,20 @@
     margin-bottom:18px;
 
     opacity:.95;
+
+}
+.feature-overlay h2 a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.2s;
+
+}
+
+.feature-overlay h2 a:hover{
+
+    color:#7cb5ff;
 
 }
