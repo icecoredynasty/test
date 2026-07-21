@@ -722,7 +722,7 @@
 
     gap:16px;
 
-    align-items:flex-start;
+    align-items:center;
 
     padding:16px 0;
 
@@ -738,15 +738,17 @@
 
 .highlight-item img{
 
-    width:92px;
+    width:96px;
 
     height:72px;
 
     object-fit:cover;
 
-    border-radius:8px;
+    object-position:center;
 
     flex-shrink:0;
+
+    display:block;
 
 }
 
