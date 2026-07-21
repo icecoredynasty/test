@@ -814,11 +814,9 @@
 
     margin-top:60px;
 
-    padding:18px 24px;
+    padding:16px 24px;
 
     background:#17395e;
-
-    color:white;
 
 }
 
@@ -834,19 +832,21 @@
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
 
-    gap:26px;
+    align-items:center;
 
-    margin-bottom:12px;
+    gap:24px;
+
+    margin-bottom:10px;
 
 }
 
 .footer-logo{
 
-    width:30px;
+    width:32px;
+
+    display:block;
 
 }
 
@@ -855,6 +855,8 @@
     display:flex;
 
     gap:22px;
+
+    flex-wrap:wrap;
 
 }
 
@@ -870,7 +872,7 @@
 
 .footer-links a:hover{
 
-    color:#79b0ff;
+    color:#7cb5ff;
 
 }
 
@@ -880,13 +882,15 @@
 
     font-size:.78rem;
 
-    color:#d4e1f8;
+    color:#d3def5;
 
 }
 
 .footer-bottom a{
 
-    color:#d4e1f8;
+    color:#d3def5;
+
+    text-decoration:none;
 
 }
 
