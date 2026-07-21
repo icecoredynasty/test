@@ -28,9 +28,9 @@
 
     background:url("/test/assets/images/hero.jpg") center center/cover no-repeat;
 
-    opacity:.90;
+    opacity:1;
 
-    filter:contrast(1.08) saturate(1.08) brightness(.88);
+    filter:contrast(1.15) saturate(1.18) brightness(.82);
 
 }
 
@@ -44,9 +44,9 @@
 
     background:linear-gradient(
     90deg,
-    rgba(255,255,255,.88),
-    rgba(255,255,255,.52),
-    rgba(255,255,255,.10)
+    rgba(255,255,255,.82),
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.03)
     );
 
 }
