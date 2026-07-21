@@ -748,3 +748,32 @@
     color:#777;
 
 }
+.feature-card{
+
+    display:block;
+
+    position:relative;
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.feature-card:hover{
+
+    color:white;
+
+}
+
+.feature-card img{
+
+    transition:.35s;
+
+}
+
+.feature-card:hover img{
+
+    transform:scale(1.03);
+
+}
