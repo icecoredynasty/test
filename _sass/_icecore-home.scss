@@ -202,17 +202,27 @@
 
         min-height:420px;
 
-    }
+        position:relative;
 
-    .feature-overlay{
-
-        left:22px;
-
-        right:22px;
-
-        bottom:22px;
+        overflow:hidden;
 
     }
+   
+.feature-overlay{
+
+    position:absolute;
+
+    left:34px;
+
+    right:34px;
+
+    bottom:34px;
+
+    z-index:3;
+
+    color:white;
+
+}
 
     .feature-overlay h2{
 
