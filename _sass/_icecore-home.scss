@@ -673,7 +673,17 @@
 
     gap:16px;
 
-    margin-bottom:22px;
+    align-items:flex-start;
+
+    padding:16px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.highlight-item:last-child{
+
+    border-bottom:none;
 
 }
 
@@ -685,39 +695,53 @@
 
     object-fit:cover;
 
-    border-radius:6px;
+    border-radius:8px;
 
     flex-shrink:0;
 
 }
 
+.highlight-content{
+
+    flex:1;
+
+}
+
+.highlight-date{
+
+    font-size:.72rem;
+
+    color:#777;
+
+    margin-bottom:6px;
+
+    font-weight:600;
+
+}
+
 .highlight-item h4{
 
-    margin:4px 0 0;
+    margin:0;
 
-    line-height:1.3;
+    font-size:1rem;
+
+    line-height:1.35;
 
 }
 
 .highlight-item h4 a{
 
+    color:#111;
+
     text-decoration:none;
 
-    color:#111;
+    transition:.2s;
 
 }
 
 .highlight-item h4 a:hover{
 
     color:#0d5be1;
-
-}
-
-.highlight-date{
-
-    font-size:12px;
-
-    color:#777;
 
 }
 .feature-card{
