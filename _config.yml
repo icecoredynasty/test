@@ -118,12 +118,9 @@ footer:
       icon: fas fa-hockey-puck
       url: https://hockey.fantasysports.yahoo.com/
 
-<a href="/gm-zone/">
-    <img src="/test/assets/images/favicon.jpg"
-         alt="IC"
-         class="footer-ic">
-    GM Zone
-</a>
+    - label: GM Zone
+      icon: fas fa-users
+      url: /gm-zone/
 
     - label: Reddit
       icon: fab fa-reddit
