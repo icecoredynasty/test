@@ -404,7 +404,9 @@
 ====================================== */
 .editors-pick{
 
-    display:block;
+    display:flex;
+
+    flex-direction:column;
 
 }
 
@@ -425,8 +427,6 @@
 .editor-content{
 
     display:block;
-
-    clear:both;
 
     padding:0;
 
@@ -925,6 +925,11 @@
 }
 .page__footer-follow{
 
-    font-size:.85rem;
+    font-size:.75rem;
+
+}
+.page__footer-follow li{
+
+    margin:0 10px;
 
 }
