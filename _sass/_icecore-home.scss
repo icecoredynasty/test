@@ -777,3 +777,22 @@
     transform:scale(1.03);
 
 }
+.highlight-item{
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #ececec;
+
+}
+.highlight-item:last-child{
+
+    border-bottom:none;
+
+}
+.latest-news li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
