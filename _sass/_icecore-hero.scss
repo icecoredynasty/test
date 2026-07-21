@@ -28,7 +28,9 @@
 
     background:url("/test/assets/images/hero.jpg") center center/cover no-repeat;
 
-    opacity:.35;
+    opacity:.55;
+
+    filter:contrast(1.15) brightness(.92);
 
 }
 
