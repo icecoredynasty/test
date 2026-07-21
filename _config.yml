@@ -112,3 +112,20 @@ logo: "/assets/images/logo.png"
 masthead_title: ""
 title: ""
 
+footer:
+  links:
+    - label: Yahoo League
+      icon: fas fa-hockey-puck
+      url: https://hockey.fantasysports.yahoo.com/
+
+    - label: GM Zone
+      icon: fas fa-users-cog
+      url: /gm-zone/
+
+    - label: Reddit
+      icon: fab fa-reddit
+      url: https://reddit.com/r/...
+
+    - label: Contact
+      icon: fas fa-envelope
+      url: mailto:info@icecoredynasty.com
