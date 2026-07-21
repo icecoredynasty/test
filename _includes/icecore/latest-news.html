@@ -1,64 +1,35 @@
-
 <section class="latest-news">
 
     <div class="section-heading">
-
         <h3>Latest News</h3>
-
     </div>
 
-    <article class="news-item">
+    {% assign news = site.posts | where: "category", "news" %}
 
-        <span class="news-date">
-
-            JUL 20
-
-        </span>
-
-        <a href="#">
-
-            Keeper deadline officially announced
-
-        </a>
-
-    </article>
+    {% for post in news limit:3 %}
 
     <article class="news-item">
 
-        <span class="news-date">
+        <div class="news-date">
+            {{ post.date | date: "%b %d" | upcase }}
+        </div>
 
-            JUL 18
+        <div class="news-content">
 
-        </span>
+            <h4>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h4>
 
-        <a href="#">
+            <p>
+                {{ post.excerpt | strip_html | truncate: 90 }}
+            </p>
 
-            Expansion Draft order confirmed
-
-        </a>
-
-    </article>
-
-    <article class="news-item">
-
-        <span class="news-date">
-
-            JUL 16
-
-        </span>
-
-        <a href="#">
-
-            Aurora Foxes unveil their new captain
-
-        </a>
+        </div>
 
     </article>
 
-    <a class="more-link" href="#">
-
-        All News →
-
-    </a>
+    {% endfor %}
 
 </section>
