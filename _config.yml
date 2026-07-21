@@ -129,3 +129,6 @@ footer:
     - label: Contact
       icon: fas fa-envelope
       url: mailto:info@icecoredynasty.com
+
+atom_feed:
+  hide: true
