@@ -237,6 +237,31 @@
     }
 
 }
+.feature-card{
+
+    min-height:420px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.feature-overlay{
+
+    position:absolute;
+
+    left:34px;
+
+    right:34px;
+
+    bottom:34px;
+
+    z-index:3;
+
+    color:white;
+
+}
 /* ======================================
    LATEST NEWS
 ====================================== */
