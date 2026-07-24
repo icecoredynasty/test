@@ -134,9 +134,6 @@ footer:
       icon: fas fa-envelope
       url: /contact/
 
-atom_feed:
-  hide: true
-
 collections:
 
   teams:
