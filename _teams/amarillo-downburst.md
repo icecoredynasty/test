@@ -1,5 +1,7 @@
 ---
+layout: team
 title: Amarillo Downburst
+permalink: /teams/amarillo-downburst/
 slug: amarillo-downburst
 
 city: Amarillo
