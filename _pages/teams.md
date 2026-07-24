@@ -1,19 +1,22 @@
 ---
-layout: default
 title: Teams
 permalink: /teams/
+layout: single
+author_profile: false
+
+header:
+  overlay_image: /assets/images/heroes/teams-hero.jpg
+  overlay_filter: rgba(0,0,0,0.55)
+  caption: "IceCore Dynasty"
 ---
 
-<h1>Teams Test</h1>
+<div class="teams-intro">
 
-<p>Počet tímov: {{ site.teams | size }}</p>
+# Every Franchise Has A Story
 
-<ul>
-{% for team in site.teams %}
-  <li>
-    <a href="{{ team.url | relative_url }}">
-      {{ team.title }}
-    </a>
-  </li>
-{% endfor %}
-</ul>
+Twenty-six organizations. Twenty-six identities.
+Built to compete. Built to last.
+
+</div>
+
+{% include team-grid.html %}
