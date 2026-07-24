@@ -567,7 +567,7 @@
 .page__footer-follow{
 
     text-align:center;
-    font-size:.80rem;
+    font-size:.82rem;
 
 }
 
@@ -614,6 +614,25 @@
     vertical-align:-2px;
 
 }
+
+/* Footer */
+
+.page__footer{
+
+    margin-top:40px;
+
+}
+
+.page__footer footer{
+
+    max-width:1450px;
+
+    margin:auto;
+
+    padding:20px 24px 14px;
+
+}
+
 /* =======================================================
    GLOBAL EFFECTS
 ======================================================= */
