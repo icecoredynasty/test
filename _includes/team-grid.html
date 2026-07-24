@@ -1,22 +1,26 @@
-Počet tímov: {{ site.teams | size }}
-
-<hr>
 <div class="team-grid">
 
 {% assign teams = site.teams | sort: "title" %}
 
 {% for team in teams %}
 
-<a class="team-card" href="{{ team.url | relative_url }}">
+<a href="{{ team.url | relative_url }}" class="team-card">
 
-    <img
-        src="{{ team.logo | relative_url }}"
-        alt="{{ team.title }}"
-        class="team-card-logo">
+<div class="team-card-logo">
 
-    <h3>{{ team.title }}</h3>
+<img src="{{ team.logo | relative_url }}" alt="{{ team.title }}">
 
-    <p>{{ team.motto }}</p>
+</div>
+
+<div class="team-card-body">
+
+<h3>{{ team.title }}</h3>
+
+<p class="team-motto">
+{{ team.motto }}
+</p>
+
+</div>
 
 </a>
 
