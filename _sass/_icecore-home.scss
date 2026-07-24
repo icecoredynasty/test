@@ -436,8 +436,8 @@
 
     display:flex;
     align-items:center;
-    gap:18px;
-    padding:18px 0;
+    gap:16px;
+    padding:16px 0;
     border-bottom:1px solid #ececec;
 
 }
@@ -474,7 +474,7 @@
 .calendar-date strong{
 
     display:block;
-    font-size:1.5rem;
+    font-size:1.3rem;
     line-height:1.1;
 
 }
@@ -489,7 +489,7 @@
 
     margin:0 0 4px;
 
-    font-size:.95rem;
+    font-size:.80rem;
 
 }
 
@@ -531,7 +531,7 @@
 
     color:#333;
     text-decoration:none;
-    font-size:.88rem;
+    font-size:.80rem;
     font-weight:500;
     transition:color .2s ease;
 
