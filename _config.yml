@@ -118,17 +118,21 @@ footer:
       icon: fas fa-hockey-puck
       url: https://hockey.fantasysports.yahoo.com/
 
-    - label: GM Zone
-      icon: fas fa-users
-      url: /gm-zone/
-
     - label: Reddit
       icon: fab fa-reddit
       url: https://reddit.com/r/...
 
+    - label: Privacy Policy
+      icon: fas fa-user-shield
+      url: /privacy/
+
+    - label: Terms of Use
+      icon: fas fa-file-contract
+      url: /terms/
+
     - label: Contact
       icon: fas fa-envelope
-      url: mailto:info@icecoredynasty.com
+      url: /contact/
 
 atom_feed:
   hide: true
