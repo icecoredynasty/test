@@ -1,24 +1,21 @@
 ---
-layout: team
-
 title: Amarillo Downburst
+slug: amarillo-downburst
 
-short: Amarillo
+city: Amarillo
+nickname: Downburst
 
-logo: amarillo-downburst.jpg
-
-hero: cambridge-hero.jpg
-
-color: "#0d5be1"
-
-status: active
-
-gm:
-
-arena:
-
+conference: West
+league: 1
+status: Active
 founded: 2026
 
-slogan: Knowledge Wins Championships.
+logo: /assets/images/teams/amarillo-downburst.png
 
+primary: "#C88A2A"
+secondary: "#111111"
+
+motto: "When the sky breaks, we answer."
+
+founded_on: "Founded on the windswept plains of the Texas Panhandle."
 ---
