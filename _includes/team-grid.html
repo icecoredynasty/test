@@ -1,0 +1,22 @@
+<div class="team-grid">
+
+{% assign teams = site.teams | sort: "title" %}
+
+{% for team in teams %}
+
+<a class="team-card" href="{{ team.url | relative_url }}">
+
+    <img
+        src="{{ team.logo | relative_url }}"
+        alt="{{ team.title }}"
+        class="team-card-logo">
+
+    <h3>{{ team.title }}</h3>
+
+    <p>{{ team.motto }}</p>
+
+</a>
+
+{% endfor %}
+
+</div>
