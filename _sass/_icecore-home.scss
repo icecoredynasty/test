@@ -132,11 +132,15 @@
 
 .feature-card{
 
+    display:block;
     position:relative;
     overflow:hidden;
     border-radius:10px;
     min-height:460px;
     background:#111;
+
+    color:inherit;
+    text-decoration:none;
 
 }
 
