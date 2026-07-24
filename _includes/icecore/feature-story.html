@@ -1,43 +1,29 @@
+{% raw %}
+{% assign feature = site.posts | where: "featured", true | first %}
+
 <div class="section-heading">
-
     <h3>Feature Story</h3>
-
 </div>
-<a class="feature-card" href="#">
+
+{% if feature %}
+<a class="feature-card" href="{{ feature.url | relative_url }}">
 
     <div class="feature-image">
-
-        <img src="/test/assets/images/feature.jpg" alt="">
-
+        <img src="{{ feature.image | relative_url }}" alt="{{ feature.title }}">
     </div>
 
     <div class="feature-overlay">
 
         <div class="feature-date">
-
-            MAY 12
-
+            {{ feature.date | date: "%b %d" | upcase }}
         </div>
 
-        <h2>
+        <h2>{{ feature.title }}</h2>
 
-            <a href="#">
-
-                The Road Ahead:
-                <br>
-                A New Chapter Begins
-
-            </a>
-
-        </h2>
-
-        <p>
-
-            A look at the key storylines shaping the upcoming season
-            and the future of IceCore Dynasty.
-
-        </p>
+        <p>{{ feature.excerpt }}</p>
 
     </div>
 
 </a>
+{% endif %}
+{% endraw %}
