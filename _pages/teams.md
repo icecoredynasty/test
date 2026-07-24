@@ -1,14 +1,19 @@
 ---
+layout: default
 title: Teams
 permalink: /teams/
-layout: single
-author_profile: false
 ---
 
-# TEST
+<h1>Teams Test</h1>
 
-Ahoj
+<p>Počet tímov: {{ site.teams | size }}</p>
 
-
-{% include team-grid.html %}
-
+<ul>
+{% for team in site.teams %}
+  <li>
+    <a href="{{ team.url | relative_url }}">
+      {{ team.title }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
