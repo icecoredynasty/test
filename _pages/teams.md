@@ -1,22 +1,78 @@
 ---
 title: Teams
 permalink: /teams/
-layout: single
+layout: icecore-page
 author_profile: false
-
-header:
-  overlay_image: /assets/images/heroes/teams-hero.jpg
-  overlay_filter: rgba(0,0,0,0.55)
-  caption: "IceCore Dynasty"
 ---
 
-<div class="teams-intro">
+<section class="teams-hero">
 
-# Every Franchise Has A Story
+  <div class="teams-hero__inner">
 
-Twenty-six organizations. Twenty-six identities.
-Built to compete. Built to last.
+    <div class="teams-hero__copy">
 
-</div>
+      <span class="teams-hero__eyebrow">OUR FRANCHISES</span>
 
-{% include team-grid.html %}
+      <h1>
+        EVERY FRANCHISE<br>
+        HAS A STORY<span>.</span>
+      </h1>
+
+      <div class="teams-hero__line"></div>
+
+      <p>
+        Every city. Every identity.<br>
+        Every dynasty begins somewhere.
+      </p>
+
+    </div>
+
+    <div class="teams-hero__mark" aria-hidden="true">
+      IC
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="teams-directory">
+
+  <div class="teams-directory__inner">
+
+    <div class="teams-directory__top">
+
+      <div>
+        <span class="teams-section-label">ACTIVE FRANCHISES</span>
+        <div class="teams-section-line"></div>
+      </div>
+
+      <div class="teams-filters">
+
+        <label class="teams-filter">
+          <span>League</span>
+
+          <select id="league-filter">
+            <option value="1">League I</option>
+          </select>
+        </label>
+
+        <label class="teams-filter">
+          <span>Conference</span>
+
+          <select id="conference-filter">
+            <option value="all">All Conferences</option>
+            <option value="east">Eastern</option>
+            <option value="west">Western</option>
+          </select>
+        </label>
+
+      </div>
+
+    </div>
+
+    {% include team-grid.html %}
+
+  </div>
+
+</section>
