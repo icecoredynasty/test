@@ -5,18 +5,34 @@ layout: icecore-page
 author_profile: false
 ---
 
-<section class="teams-hero"
-  style="background-image: url('{{ '/assets/images/heroes/teams-hero.jpg' | relative_url }}');">
+<section class="teams-hero">
+
+  <div class="teams-hero__bg"
+       style="background-image: url('{{ '/assets/images/heroes/teams-hero.jpg' | relative_url }}');">
+  </div>
 
   <div class="teams-hero__inner">
-    <span class="teams-hero__eyebrow">OUR FRANCHISES</span>
 
-    <h1>EVERY FRANCHISE<br>HAS A STORY<span>.</span></h1>
+    <div class="teams-hero__copy">
 
-    <p>
-      Every club has an identity.<br>
-      Every identity has a legacy to build.
-    </p>
+      <span class="teams-hero__eyebrow">
+        OUR FRANCHISES
+      </span>
+
+      <h1>
+        EVERY FRANCHISE<br>
+        HAS A STORY<span>.</span>
+      </h1>
+
+      <div class="teams-hero__line"></div>
+
+      <p>
+        Every club has an identity.<br>
+        Every identity has a legacy to build.
+      </p>
+
+    </div>
+
   </div>
 
 </section>
