@@ -61,11 +61,11 @@ author_profile: false
         <label class="teams-filter">
           <span>Conference</span>
 
-          <select id="conference-filter">
-            <option value="all">All Conferences</option>
-            <option value="east">Eastern</option>
-            <option value="west">Western</option>
-          </select>
+<select id="conference-filter">
+  <option value="all">All Conferences</option>
+  <option value="east">Eastern Conference</option>
+  <option value="west">Western Conference</option>
+</select>
         </label>
 
       </div>
