@@ -44,11 +44,6 @@ author_profile: false
 
     <div class="teams-directory__top">
 
-      <div>
-        <span class="teams-section-label">ACTIVE FRANCHISES</span>
-        <div class="teams-section-line"></div>
-      </div>
-
       <div class="teams-filters">
 
         <label class="teams-filter">
