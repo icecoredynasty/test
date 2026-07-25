@@ -122,17 +122,13 @@ footer:
       icon: fab fa-reddit
       url: https://reddit.com/r/...
 
-    - label: Privacy Policy
-      icon: fas fa-user-shield
-      url: /privacy/
-
-    - label: Terms of Use
-      icon: fas fa-file-contract
-      url: /terms/
-
     - label: Contact
       icon: fas fa-envelope
       url: /contact/
+
+    - label: Legal
+      icon: fas fa-scale-balanced
+      url: /test/legal/
 
 collections:
 
