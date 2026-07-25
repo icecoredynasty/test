@@ -456,3 +456,170 @@
   font-weight: 800;
   letter-spacing: .04em;
 }
+
+/* =========================================================
+   COMPACT FRANCHISE CARDS
+   ========================================================= */
+
+.teams-directory {
+  background: #f7f8fa;
+}
+
+.teams-directory__inner {
+  max-width: 1320px;
+  margin: 0 auto;
+
+  padding: 22px 32px 55px;
+}
+
+.teams-group {
+  margin-top: 26px;
+}
+
+.teams-group:first-child {
+  margin-top: 0;
+}
+
+.teams-group__heading {
+  margin-bottom: 10px;
+}
+
+.teams-group__heading span {
+  color: #151a22;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .07em;
+}
+
+.team-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.team-card {
+  position: relative;
+
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  height: 128px;
+
+  margin: 0;
+  padding: 12px 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff !important;
+
+  border: 1px solid #e1e5ea;
+  border-radius: 5px;
+
+  box-shadow: 0 2px 5px rgba(20,30,45,.04);
+
+  text-decoration: none !important;
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-2px);
+
+  background: #fff !important;
+
+  border-color: #cbd2db;
+
+  box-shadow: 0 6px 14px rgba(20,30,45,.09);
+}
+
+.team-card__logo {
+  width: 76px;
+  height: 76px;
+
+  margin: 0 0 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+}
+
+.team-card__logo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.team-card__name {
+  margin: 0;
+
+  color: #151a22 !important;
+
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: .035em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* 4 columns */
+
+@media (max-width: 1100px) {
+
+  .team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+
+/* 3 columns */
+
+@media (max-width: 850px) {
+
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* 2 columns */
+
+@media (max-width: 600px) {
+
+  .teams-directory__inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-card {
+    height: 120px;
+  }
+
+  .team-card__logo {
+    width: 68px;
+    height: 68px;
+  }
+
+}
