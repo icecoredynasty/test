@@ -516,3 +516,25 @@
   }
 
 }
+
+.teams-group {
+  margin-top: 28px;
+}
+
+.teams-group:first-child {
+  margin-top: 0;
+}
+
+.teams-group__heading {
+  margin-bottom: 14px;
+}
+
+.teams-group__heading span {
+  display: block;
+
+  color: #111820;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
