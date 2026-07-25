@@ -1,193 +1,111 @@
 /* =========================================================
-   ICECORE DYNASTY — TEAMS
-   ========================================================= */
-
-
-/* HERO
+   TEAMS HERO
    ========================================================= */
 
 .teams-hero {
   position: relative;
+  min-height: 315px;
   overflow: hidden;
 
-  min-height: 320px;
-
-  background: #f4f7fb;
+  background: #eef4fb;
   border-bottom: 1px solid #e5e9ef;
 }
 
-
-/* Background image */
-
-.teams-hero__bg {
+/* actual image */
+.teams-hero::before {
+  content: "";
   position: absolute;
   inset: 0;
 
-  background-position: center right;
+  background-image: url("/test/assets/images/heroes/teams-hero.jpg");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  opacity: .92;
 
   z-index: 0;
 }
 
-
-/* Light overlay — strong on left, weak on right */
-
+/* white fade like homepage */
 .teams-hero::after {
   content: "";
-
   position: absolute;
   inset: 0;
 
   background: linear-gradient(
     90deg,
-    rgba(255,255,255,.98) 0%,
-    rgba(255,255,255,.96) 28%,
-    rgba(255,255,255,.78) 48%,
-    rgba(255,255,255,.30) 72%,
-    rgba(255,255,255,.08) 100%
+    rgba(255,255,255,.96) 0%,
+    rgba(255,255,255,.90) 30%,
+    rgba(255,255,255,.52) 55%,
+    rgba(255,255,255,.12) 100%
   );
 
   z-index: 1;
-  pointer-events: none;
 }
-
 
 .teams-hero__inner {
   position: relative;
   z-index: 2;
 
   max-width: 1440px;
-  min-height: 320px;
+  min-height: 315px;
 
   margin: 0 auto;
-  padding: 42px 48px;
+  padding: 38px 7%;
 
   display: flex;
   align-items: center;
 }
 
-
 .teams-hero__copy {
-  position: relative;
-  z-index: 2;
-
-  max-width: 620px;
+  max-width: 600px;
 }
-
 
 .teams-hero__eyebrow {
   display: block;
 
   margin-bottom: 10px;
 
-  color: #075be8;
+  color: #0d5be1;
 
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: .08em;
-
-  text-transform: uppercase;
 }
-
 
 .teams-hero h1 {
   margin: 0;
 
   color: #080b10;
 
-  font-size: clamp(42px, 4.3vw, 68px);
+  font-size: 48px;
   font-weight: 900;
-  line-height: .96;
-  letter-spacing: -.035em;
-
-  text-transform: uppercase;
+  line-height: .94;
+  letter-spacing: -2px;
 }
-
 
 .teams-hero h1 span {
-  color: #075be8;
+  color: #0d5be1;
 }
-
 
 .teams-hero__line {
-  width: 34px;
+  width: 55px;
   height: 3px;
 
-  margin: 19px 0 15px;
+  margin: 14px 0 13px;
 
-  background: #075be8;
+  background: #0d5be1;
 }
-
 
 .teams-hero p {
   margin: 0;
 
-  color: #394454;
+  color: #4b4b4b;
 
   font-size: 16px;
   line-height: 1.45;
 }
-
-
-/* HERO RESPONSIVE */
-
-@media (max-width: 900px) {
-
-  .teams-hero,
-  .teams-hero__inner {
-    min-height: 270px;
-  }
-
-  .teams-hero__inner {
-    padding: 36px 30px;
-  }
-
-  .teams-hero__copy {
-    max-width: 520px;
-  }
-
-  .teams-hero::after {
-    background: linear-gradient(
-      90deg,
-      rgba(255,255,255,.98) 0%,
-      rgba(255,255,255,.94) 45%,
-      rgba(255,255,255,.55) 100%
-    );
-  }
-
-}
-
-
-@media (max-width: 600px) {
-
-  .teams-hero,
-  .teams-hero__inner {
-    min-height: 240px;
-  }
-
-  .teams-hero__inner {
-    padding: 30px 20px;
-  }
-
-  .teams-hero h1 {
-    font-size: 38px;
-  }
-
-  .teams-hero p {
-    font-size: 14px;
-  }
-
-  .teams-hero__bg {
-    background-position: 65% center;
-  }
-
-  .teams-hero::after {
-    background: rgba(255,255,255,.84);
-  }
-
-}
-
 
 /* DIRECTORY
    ========================================================= */
