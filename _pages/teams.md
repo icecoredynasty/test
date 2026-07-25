@@ -52,9 +52,10 @@ author_profile: false
         <label class="teams-filter">
           <span>League</span>
 
-          <select id="league-filter">
-            <option value="1">League I</option>
-          </select>
+<select id="league-filter">
+  <option value="all">All Leagues</option>
+  <option value="1" selected>League I</option>
+</select>
         </label>
 
         <label class="teams-filter">
