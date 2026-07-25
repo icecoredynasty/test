@@ -38,7 +38,7 @@ author_profile: false
 
   <div class="teams-directory__inner">
 
-    <div class="teams-directory__top">
+    {% include team-grid.html %}
 
       <div class="teams-filters">
 
@@ -62,11 +62,7 @@ author_profile: false
         </label>
 
       </div>
-
-    </div>
-
-    {% include team-grid.html %}
-
+      
   </div>
 
 </section>
