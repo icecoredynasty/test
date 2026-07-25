@@ -9,7 +9,7 @@ nickname: Downburst
 
 conference: West
 league: 1
-status: Active
+status: active
 founded: 2026
 
 logo: /assets/images/teams/amarillo-downburst.png
