@@ -2,20 +2,105 @@
 layout: default
 ---
 
-<div class="team-page">
+<main class="franchise-page">
 
-<img
-    src="{{ page.logo | relative_url }}"
-    class="team-logo">
+  <section class="franchise-header">
 
-<h1>{{ page.title }}</h1>
+    <div class="franchise-header__inner">
 
-<p><em>{{ page.motto }}</em></p>
+      <div class="franchise-header__logo">
 
-<p>{{ page.founded_on }}</p>
+        <img
+          src="{{ page.logo | relative_url }}"
+          alt="{{ page.title }} logo">
 
-<hr>
+      </div>
 
-{{ content }}
+      <div class="franchise-header__content">
 
-</div>
+        <span class="franchise-header__eyebrow">
+          ICECORE DYNASTY · LEAGUE {{ page.league }}
+        </span>
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.motto %}
+          <p class="franchise-header__motto">
+            “{{ page.motto }}”
+          </p>
+        {% endif %}
+
+        {% if page.description %}
+          <p class="franchise-header__description">
+            {{ page.description }}
+          </p>
+        {% endif %}
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="franchise-info">
+
+    <div class="franchise-info__inner">
+
+      <div class="franchise-meta">
+
+        <div class="franchise-meta__item">
+          <span>League</span>
+          <strong>League {{ page.league }}</strong>
+        </div>
+
+        <div class="franchise-meta__item">
+          <span>Conference</span>
+          <strong>
+            {% if page.conference == "east" %}
+              Eastern
+            {% elsif page.conference == "west" %}
+              Western
+            {% else %}
+              {{ page.conference }}
+            {% endif %}
+          </strong>
+        </div>
+
+        <div class="franchise-meta__item">
+          <span>Status</span>
+
+          <strong>
+            {% if page.status == "active" %}
+              Active
+            {% elsif page.status == "available" %}
+              Available
+            {% else %}
+              {{ page.status }}
+            {% endif %}
+          </strong>
+        </div>
+
+        <div class="franchise-meta__item">
+          <span>General Manager</span>
+
+          <strong>
+            {% if page.gm and page.gm != "" %}
+              {{ page.gm }}
+            {% else %}
+              —
+            {% endif %}
+          </strong>
+        </div>
+
+      </div>
+
+      <div class="franchise-content">
+        {{ content }}
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
