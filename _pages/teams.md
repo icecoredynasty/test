@@ -76,3 +76,47 @@ author_profile: false
   </div>
 
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const leagueFilter = document.getElementById("league-filter");
+  const conferenceFilter = document.getElementById("conference-filter");
+  const cards = document.querySelectorAll(".team-card");
+
+  function filterTeams() {
+
+    const selectedLeague = leagueFilter.value;
+    const selectedConference = conferenceFilter.value;
+
+    cards.forEach(function(card) {
+
+      const cardLeague = card.dataset.league;
+      const cardConference = card.dataset.conference;
+
+      const leagueMatch =
+        selectedLeague === "all" ||
+        cardLeague === selectedLeague;
+
+      const conferenceMatch =
+        selectedConference === "all" ||
+        cardConference === selectedConference;
+
+      if (leagueMatch && conferenceMatch) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+
+    });
+
+  }
+
+  leagueFilter.addEventListener("change", filterTeams);
+  conferenceFilter.addEventListener("change", filterTeams);
+
+  filterTeams();
+
+});
+</script>
+
