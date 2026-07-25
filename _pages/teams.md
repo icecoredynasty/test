@@ -7,10 +7,6 @@ author_profile: false
 
 <section class="teams-hero">
 
-  <div class="teams-hero__bg"
-       style="background-image: url('{{ '/assets/images/heroes/teams-hero.jpg' | relative_url }}');">
-  </div>
-
   <div class="teams-hero__inner">
 
     <div class="teams-hero__copy">
