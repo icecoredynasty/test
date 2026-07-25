@@ -309,20 +309,17 @@
 .team-card__name {
   width: 100%;
 
-  overflow: hidden;
-
   color: #101722;
 
   font-size: 15px;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: .035em;
 
   text-align: center;
   text-transform: uppercase;
 
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  overflow-wrap: normal;
 }
 
 
