@@ -1,29 +1,32 @@
 <div class="team-grid">
 
-{% assign teams = site.teams | sort: "title" %}
+  {% assign teams = site.teams | sort: "title" %}
 
-{% for team in teams %}
+  {% for team in teams %}
 
-<a href="{{ team.url | relative_url }}" class="team-card">
+    <a
+      href="{{ team.url | relative_url }}"
+      class="team-card"
+      data-league="{{ team.league | default: 1 }}"
+      data-conference="{{ team.conference | downcase }}"
+    >
 
-<div class="team-card-logo">
+      <div class="team-card__logo">
 
-<img src="{{ team.logo | relative_url }}" alt="{{ team.title }}">
+        <img
+          src="{{ team.logo | relative_url }}"
+          alt="{{ team.title }}"
+          loading="lazy"
+        >
 
-</div>
+      </div>
 
-<div class="team-card-body">
+      <div class="team-card__name">
+        {{ team.title }}
+      </div>
 
-<h3>{{ team.title }}</h3>
+    </a>
 
-<p class="team-motto">
-{{ team.motto }}
-</p>
-
-</div>
-
-</a>
-
-{% endfor %}
+  {% endfor %}
 
 </div>
