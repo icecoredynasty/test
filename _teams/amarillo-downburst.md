@@ -23,62 +23,62 @@ motto: "When the sky breaks, we answer."
 founded_on: "Founded on the windswept plains of the Texas Panhandle."
 
 gm: "Available"
-arena: "TBD"
+arena: "Stormfront Arena"
 
-salary_cap: 220
+salary_cap: 500
 roster_size: 18
 ir_slots: 2
 na_slots: 5
 
 keepers:
-  - player: "Keeper 1"
-    pos: "C"
-    salary: 24
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
+  - player:
+    pos:
+    salary:
 
-  - player: "Keeper 2"
-    pos: "LW"
-    salary: 18
-
-  - player: "Keeper 3"
-    pos: "RW"
-    salary: 16
-
-  - player: "Keeper 4"
-    pos: "D"
-    salary: 14
-
-  - player: "Keeper 5"
-    pos: "D"
-    salary: 12
-
-  - player: "Keeper 6"
-    pos: "G"
-    salary: 10
-
-  - player: "Keeper 7"
-    pos: "C"
-    salary: 8
-
-  - player: "Keeper 8"
-    pos: "RW"
-    salary: 7
-
-  - player: "Keeper 9"
-    pos: "D"
-    salary: 6
-
-  - player: "Keeper 10"
-    pos: "G"
-    salary: 5
-
-prospects:
-  - player: "Prospect 1"
-    pos: "C"
-    salary: 1
+prospect:
+  player:
+  pos:
+  salary: 1
 
 rookie:
-  player: "2027 Entry Draft Pick"
-  pos: "—"
+  player:
+  pos:
   salary: 1
 ---
 
