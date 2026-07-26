@@ -2,39 +2,285 @@
 layout: default
 ---
 
-<main class="franchise-page">
+{% assign keeper_count = page.keepers | size %}
+{% assign prospect_count = page.prospects | size %}
 
-  <section class="franchise-header">
+<article class="team-page">
 
-    <div class="franchise-header__inner">
+  <header class="team-header">
 
-      <div class="franchise-header__logo">
+    <div class="team-header__identity">
 
+      {% if page.logo %}
         <img
           src="{{ page.logo | relative_url }}"
-          alt="{{ page.title }} logo">
+          alt="{{ page.title }} logo"
+          class="team-header__logo">
+      {% endif %}
 
-      </div>
+      <div class="team-header__text">
 
-      <div class="franchise-header__content">
-
-        <span class="franchise-header__eyebrow">
+        <div class="team-header__eyebrow">
           ICECORE DYNASTY · LEAGUE {{ page.league }}
-        </span>
+        </div>
 
         <h1>{{ page.title }}</h1>
 
         {% if page.motto %}
-          <p class="franchise-header__motto">
+          <p class="team-header__motto">
             “{{ page.motto }}”
           </p>
         {% endif %}
 
-        {% if page.description %}
-          <p class="franchise-header__description">
-            {{ page.description }}
-          </p>
-        {% endif %}
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <section class="team-meta">
+
+    <div class="team-meta__item">
+      <span>League</span>
+      <strong>League {{ page.league }}</strong>
+    </div>
+
+    <div class="team-meta__item">
+      <span>Conference</span>
+      <strong>{{ page.conference }}</strong>
+    </div>
+
+    <div class="team-meta__item">
+      <span>Status</span>
+      <strong>{{ page.status | capitalize }}</strong>
+    </div>
+
+    <div class="team-meta__item">
+      <span>General Manager</span>
+      <strong>{{ page.gm | default: "Available" }}</strong>
+    </div>
+
+  </section>
+
+
+  <section class="team-section team-franchise">
+
+    <div class="team-section__heading">
+      <span class="team-section__label">Franchise</span>
+      <h2>{{ page.city }}, {{ page.state }}</h2>
+    </div>
+
+    <p class="team-franchise__origin">
+      {{ page.founded_on }}
+    </p>
+
+    {{ content }}
+
+    <div class="team-facts">
+
+      <div>
+        <span>Founded</span>
+        <strong>{{ page.founded }}</strong>
+      </div>
+
+      <div>
+        <span>Home</span>
+        <strong>{{ page.city }}, {{ page.state }}</strong>
+      </div>
+
+      <div>
+        <span>Arena</span>
+        <strong>{{ page.arena | default: "TBD" }}</strong>
+      </div>
+
+      <div>
+        <span>Roster</span>
+        <strong>{{ page.roster_size }} + {{ page.ir_slots }} IR + {{ page.na_slots }} NA</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="team-section">
+
+    <div class="team-section__heading">
+      <span class="team-section__label">Roster Construction</span>
+      <h2>Protected Core</h2>
+    </div>
+
+    <div class="team-roster-summary">
+
+      <div>
+        <span>Regular Keepers</span>
+        <strong id="keeper-count">{{ keeper_count }}</strong>
+        <small>10–13</small>
+      </div>
+
+      <div>
+        <span>NA Prospects</span>
+        <strong id="prospect-count">{{ prospect_count }}</strong>
+        <small>minimum 1</small>
+      </div>
+
+      <div>
+        <span>Entry Draft</span>
+        <strong>1</strong>
+        <small>rookie</small>
+      </div>
+
+      <div>
+        <span>Salary Cap Draft</span>
+        <strong id="draft-spots">—</strong>
+        <small>remaining spots</small>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="team-section">
+
+    <div class="team-section__heading">
+      <span class="team-section__label">Protected Players</span>
+      <h2>Keepers</h2>
+    </div>
+
+    <div class="team-table-wrap">
+
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Pos</th>
+            <th class="team-table__salary">Salary</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          {% for player in page.keepers %}
+            <tr class="salary-row" data-salary="{{ player.salary }}">
+              <td>{{ player.player }}</td>
+              <td>{{ player.pos }}</td>
+              <td class="team-table__salary">{{ player.salary }}</td>
+            </tr>
+          {% endfor %}
+
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="2">Keeper Payroll</td>
+            <td class="team-table__salary" id="keeper-payroll">—</td>
+          </tr>
+        </tfoot>
+
+      </table>
+
+    </div>
+
+  </section>
+
+
+  <section class="team-section">
+
+    <div class="team-section__heading">
+      <span class="team-section__label">Development</span>
+      <h2>Prospect Pipeline</h2>
+    </div>
+
+    <div class="team-table-wrap">
+
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Pos</th>
+            <th>Type</th>
+            <th class="team-table__salary">Salary</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          {% for player in page.prospects %}
+            <tr class="salary-row prospect-row" data-salary="{{ player.salary }}">
+              <td>{{ player.player }}</td>
+              <td>{{ player.pos }}</td>
+              <td>NA Prospect</td>
+              <td class="team-table__salary">{{ player.salary }}</td>
+            </tr>
+          {% endfor %}
+
+          {% if page.rookie %}
+            <tr class="salary-row rookie-row" data-salary="{{ page.rookie.salary }}">
+              <td>{{ page.rookie.player }}</td>
+              <td>{{ page.rookie.pos }}</td>
+              <td>Entry Draft</td>
+              <td class="team-table__salary">{{ page.rookie.salary }}</td>
+            </tr>
+          {% endif %}
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+
+  <section class="team-section">
+
+    <div class="team-section__heading">
+      <span class="team-section__label">Salary Cap</span>
+      <h2>Franchise Budget</h2>
+    </div>
+
+    <div
+      class="team-budget"
+      id="team-budget"
+      data-cap="{{ page.salary_cap }}"
+      data-roster="{{ page.roster_size }}">
+
+      <div class="team-budget__main">
+
+        <span>Remaining Draft Budget</span>
+
+        <strong>
+          <span id="remaining-budget">—</span>
+          <small>coins</small>
+        </strong>
+
+      </div>
+
+      <div class="team-budget__details">
+
+        <div>
+          <span>Salary Cap</span>
+          <strong>{{ page.salary_cap }}</strong>
+        </div>
+
+        <div>
+          <span>Committed Salary</span>
+          <strong id="committed-salary">—</strong>
+        </div>
+
+        <div>
+          <span>Roster Spots Filled</span>
+          <strong>
+            <span id="filled-spots">—</span>/{{ page.roster_size }}
+          </strong>
+        </div>
+
+        <div>
+          <span>Salary Cap Draft Spots</span>
+          <strong id="remaining-spots">—</strong>
+        </div>
 
       </div>
 
@@ -43,64 +289,108 @@ layout: default
   </section>
 
 
-  <section class="franchise-info">
+  <section class="team-section team-system">
 
-    <div class="franchise-info__inner">
+    <div class="team-section__heading">
+      <span class="team-section__label">Franchise Structure</span>
+      <h2>25 Total Slots</h2>
+    </div>
 
-      <div class="franchise-meta">
+    <div class="team-slot-grid">
 
-        <div class="franchise-meta__item">
-          <span>League</span>
-          <strong>League {{ page.league }}</strong>
-        </div>
-
-        <div class="franchise-meta__item">
-          <span>Conference</span>
-          <strong>
-            {% if page.conference == "east" %}
-              Eastern
-            {% elsif page.conference == "west" %}
-              Western
-            {% else %}
-              {{ page.conference }}
-            {% endif %}
-          </strong>
-        </div>
-
-        <div class="franchise-meta__item">
-          <span>Status</span>
-
-          <strong>
-            {% if page.status == "active" %}
-              Active
-            {% elsif page.status == "available" %}
-              Available
-            {% else %}
-              {{ page.status }}
-            {% endif %}
-          </strong>
-        </div>
-
-        <div class="franchise-meta__item">
-          <span>General Manager</span>
-
-          <strong>
-            {% if page.gm and page.gm != "" %}
-              {{ page.gm }}
-            {% else %}
-              —
-            {% endif %}
-          </strong>
-        </div>
-
+      <div>
+        <strong>{{ page.roster_size }}</strong>
+        <span>Roster</span>
       </div>
 
-      <div class="franchise-content">
-        {{ content }}
+      <div>
+        <strong>{{ page.ir_slots }}</strong>
+        <span>IR</span>
+      </div>
+
+      <div>
+        <strong>{{ page.na_slots }}</strong>
+        <span>NA</span>
+      </div>
+
+      <div>
+        <strong>
+          {{ page.roster_size | plus: page.ir_slots | plus: page.na_slots }}
+        </strong>
+        <span>Total</span>
       </div>
 
     </div>
 
   </section>
 
-</main>
+</article>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const budget = document.getElementById("team-budget");
+
+  if (!budget) return;
+
+  const salaryCap = Number(budget.dataset.cap) || 0;
+  const rosterSize = Number(budget.dataset.roster) || 18;
+
+  const salaryRows = document.querySelectorAll(".salary-row");
+  const keeperRows = document.querySelectorAll(
+    ".team-table tbody .salary-row:not(.prospect-row):not(.rookie-row)"
+  );
+
+  const prospectRows = document.querySelectorAll(".prospect-row");
+  const rookieRows = document.querySelectorAll(".rookie-row");
+
+  let committedSalary = 0;
+
+  salaryRows.forEach(function (row) {
+    committedSalary += Number(row.dataset.salary) || 0;
+  });
+
+  const keeperCount = keeperRows.length;
+  const prospectCount = prospectRows.length;
+  const rookieCount = rookieRows.length;
+
+  const filledSpots =
+    keeperCount +
+    prospectCount +
+    rookieCount;
+
+  const remainingSpots =
+    Math.max(0, rosterSize - filledSpots);
+
+  const remainingBudget =
+    Math.max(0, salaryCap - committedSalary);
+
+  document.getElementById("keeper-count").textContent =
+    keeperCount;
+
+  document.getElementById("prospect-count").textContent =
+    prospectCount;
+
+  document.getElementById("keeper-payroll").textContent =
+    Array.from(keeperRows).reduce(function (total, row) {
+      return total + (Number(row.dataset.salary) || 0);
+    }, 0);
+
+  document.getElementById("committed-salary").textContent =
+    committedSalary;
+
+  document.getElementById("remaining-budget").textContent =
+    remainingBudget;
+
+  document.getElementById("filled-spots").textContent =
+    filledSpots;
+
+  document.getElementById("remaining-spots").textContent =
+    remainingSpots;
+
+  document.getElementById("draft-spots").textContent =
+    remainingSpots;
+
+});
+</script>
