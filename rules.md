@@ -4,151 +4,219 @@ title: Rules
 permalink: /rules/
 ---
 
-<div class="rules-page">
+<div class="ic-rules">
 
-  <header class="rules-hero">
-    <span class="rules-kicker">ICECORE DYNASTY · LEAGUE RULES</span>
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
 
-    <h1>Build for today.<br>Own tomorrow.</h1>
+  <section class="ic-rules-hero">
 
-    <p class="rules-lead">
-      IceCore is a long-term fantasy hockey league built around permanent
-      franchises, player development and salary decisions — without turning
-      dynasty hockey into a second job.
-    </p>
-
-    <div class="rules-hero__meta">
-      <span>500 Salary Cap</span>
-      <span>500 FAAB</span>
-      <span>18 Player Roster</span>
-      <span>10–13 Keepers</span>
-      <span>Annual Entry Draft</span>
-    </div>
-  </header>
-
-
-  <section class="rules-intro">
-
-    <div class="rules-intro__main">
-      <span class="rules-label">The Idea</span>
-      <h2>Dynasty depth. Simple execution.</h2>
-
-      <p>
-        Every General Manager controls a franchise built to exist across
-        multiple seasons. Players can be developed, retained, traded or
-        released. Salaries evolve. Prospects matter. Every decision can shape
-        what the franchise becomes next year.
-      </p>
-
-      <p>
-        But IceCore is deliberately designed to remain easy to play.
-        Yahoo Fantasy handles the everyday game. IceCore adds only the
-        long-term systems that make dynasty management meaningful.
-      </p>
-
-      <p>
-        The league should feel relaxed to participate in and serious where
-        it matters: clear deadlines, transparent salaries, predictable
-        offseason procedures and the same rules for every franchise.
-      </p>
+    <div class="ic-rules-hero__image">
+      <img
+        src="{{ '/assets/images/heroes/rules-hero.jpg' | relative_url }}"
+        alt="IceCore Dynasty franchise management"
+      >
     </div>
 
-    <aside class="rules-principle">
-      <span>League Principle</span>
-      <strong>Deep decisions.<br>Low maintenance.</strong>
+    <div class="ic-rules-hero__content">
+
+      <span class="ic-eyebrow">ICECORE DYNASTY · LEAGUE RULES</span>
+
+      <h1>
+        Build for today.<br>
+        Own tomorrow.
+      </h1>
+
+      <p class="ic-rules-hero__lead">
+        Long-term franchise management without turning fantasy hockey
+        into a second job.
+      </p>
+
+      <div class="ic-rules-stats">
+
+        <div>
+          <strong>500</strong>
+          <span>Salary Cap</span>
+        </div>
+
+        <div>
+          <strong>500</strong>
+          <span>FAAB</span>
+        </div>
+
+        <div>
+          <strong>18</strong>
+          <span>Roster</span>
+        </div>
+
+        <div>
+          <strong>10–13</strong>
+          <span>Keepers</span>
+        </div>
+
+        <div>
+          <strong>1</strong>
+          <span>Rookie / Year</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PHILOSOPHY
+       ===================================================== -->
+
+  <section class="ic-rules-intro">
+
+    <div class="ic-rules-intro__copy">
+
+      <span class="ic-eyebrow">THE IDEA</span>
+
+      <h2>
+        Dynasty depth.<br>
+        Simple execution.
+      </h2>
+
+      <p class="ic-large-copy">
+        IceCore is built around permanent franchises, player development,
+        salary decisions and long-term roster construction.
+      </p>
+
+      <p>
+        Your decisions survive beyond one season. Players can be developed,
+        retained, traded or released. Prospects matter. Salaries evolve.
+        Every offseason becomes another chapter in the same franchise.
+      </p>
+
+      <p>
+        But dynasty depth should come from decisions — not administration.
+        Yahoo Fantasy handles the everyday game while IceCore adds the
+        long-term systems that make those decisions matter.
+      </p>
+
+      <p>
+        The league is designed to be relaxed to participate in and precise
+        where it matters: clear deadlines, transparent salaries, predictable
+        processes and the same rules for every franchise.
+      </p>
+
+    </div>
+
+    <aside class="ic-rules-manifesto">
+
+      <span>ICECORE PRINCIPLE</span>
+
+      <strong>
+        Deep decisions.<br>
+        Low maintenance.
+      </strong>
+
       <p>
         Strategy should create complexity.<br>
         Administration should not.
       </p>
+
     </aside>
 
   </section>
 
 
-  <section class="rules-section rules-quick">
+  <!-- =====================================================
+       QUICK RULES
+       ===================================================== -->
 
-    <div class="rules-heading">
-      <span class="rules-label">Quick Rules</span>
+  <section class="ic-rules-section">
+
+    <header class="ic-section-heading">
+
+      <span class="ic-eyebrow">QUICK RULES</span>
+
       <h2>The league in 60 seconds.</h2>
+
       <p>
-        Everything a new GM needs to understand before taking a franchise.
+        The core systems every General Manager should understand before
+        taking control of a franchise.
       </p>
-    </div>
 
-    <div class="rules-grid">
+    </header>
 
-      <article class="rule-card">
-        <span class="rule-card__number">01</span>
+
+    <div class="ic-quick-grid">
+
+      <article class="ic-quick-card">
+        <span>01</span>
         <h3>Permanent Franchise</h3>
         <p>
-          Your franchise survives from season to season. Its roster, salaries,
-          history and achievements become part of its permanent record.
+          Your franchise continues across seasons. Its roster, salaries,
+          history and achievements remain part of its identity.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">02</span>
+      <article class="ic-quick-card">
+        <span>02</span>
         <h3>500 Coins</h3>
         <p>
-          Every franchise operates with a 500-coin Salary Cap.
-          Keeper salaries are deducted before the live Salary Cap Draft.
+          Every franchise operates under a 500-coin Salary Cap.
+          Keeper salaries reduce the budget available in the live draft.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">03</span>
+      <article class="ic-quick-card">
+        <span>03</span>
         <h3>18 + 2 IR+ + 5 NA</h3>
         <p>
-          The main roster contains 18 players:
-          3 C, 3 LW, 3 RW, 5 D, 1 G and 3 BN.
-          Yahoo also provides 2 IR+ and 5 NA slots.
+          3 C · 3 LW · 3 RW · 5 D · 1 G · 3 BN,
+          with two IR+ and five NA development slots.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">04</span>
+      <article class="ic-quick-card">
+        <span>04</span>
         <h3>10–13 Keepers</h3>
         <p>
-          Protect between 10 and 13 regular players each offseason,
-          with a maximum of one goaltender among those regular keepers.
+          Protect 10–13 regular players each offseason.
+          A maximum of one regular keeper may be a goaltender.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">05</span>
-        <h3>One NA Keeper</h3>
+      <article class="ic-quick-card">
+        <span>05</span>
+        <h3>Prospects Matter</h3>
         <p>
-          Every franchise carries one designated NA keeper into the next
-          season at a salary of 1 coin. Additional NA players may be included
-          among the regular keepers.
+          Every franchise carries one designated NA keeper into the new
+          season at a salary of 1 coin.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">06</span>
+      <article class="ic-quick-card">
+        <span>06</span>
         <h3>One Rookie</h3>
         <p>
-          Every franchise receives one Entry Draft selection each year.
-          The order is reverse standings, there is no lottery and picks
-          cannot be traded.
+          Every franchise receives one annual Entry Draft selection.
+          Reverse standings. No lottery. No trading picks.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">07</span>
-        <h3>3–6 Draft Spots</h3>
+      <article class="ic-quick-card">
+        <span>07</span>
+        <h3>Live Salary Draft</h3>
         <p>
-          After 10–13 keepers, one NA keeper and one rookie, the remaining
-          3–6 roster positions are filled in Yahoo's Live Salary Cap Draft.
+          The remaining 3–6 roster positions are filled through Yahoo's
+          Live Salary Cap Draft.
         </p>
       </article>
 
-      <article class="rule-card">
-        <span class="rule-card__number">08</span>
+      <article class="ic-quick-card">
+        <span>08</span>
         <h3>500 FAAB</h3>
         <p>
-          Waivers use a separate 500 FAAB budget. FAAB determines who wins
-          the claim; it never becomes the player's IceCore salary.
+          Waivers use a separate 500 FAAB budget.
+          Winning bids never become player salary.
         </p>
       </article>
 
@@ -157,173 +225,246 @@ permalink: /rules/
   </section>
 
 
-  <section class="rules-section">
+  <!-- =====================================================
+       ANNUAL CYCLE
+       ===================================================== -->
 
-    <div class="rules-heading">
-      <span class="rules-label">The Annual Cycle</span>
-      <h2>One season. One continuous franchise.</h2>
-    </div>
+  <section class="ic-rules-section ic-rules-cycle-section">
 
-    <div class="rules-cycle">
+    <header class="ic-section-heading">
 
-      <div class="rules-cycle__item">
-        <strong>01</strong>
-        <span>Keepers</span>
-        <p>Protect 10–13 players and one designated NA keeper.</p>
-      </div>
+      <span class="ic-eyebrow">THE ANNUAL CYCLE</span>
 
-      <div class="rules-cycle__item">
-        <strong>02</strong>
-        <span>Entry Draft</span>
-        <p>Every franchise adds exactly one rookie.</p>
-      </div>
+      <h2>One season ends.<br>The franchise doesn't.</h2>
 
-      <div class="rules-cycle__item">
-        <strong>03</strong>
-        <span>Salary Cap Draft</span>
-        <p>Fill the remaining 3–6 positions with the budget left under 500.</p>
-      </div>
+    </header>
 
-      <div class="rules-cycle__item">
-        <strong>04</strong>
-        <span>Season</span>
-        <p>Yahoo handles matchups, scoring, waivers, trades and playoffs.</p>
-      </div>
 
-      <div class="rules-cycle__item">
-        <strong>05</strong>
-        <span>Repeat</span>
-        <p>Salaries evolve, prospects develop and the franchise continues.</p>
-      </div>
+    <div class="ic-cycle">
+
+      <article>
+        <span>01</span>
+        <strong>Keepers</strong>
+        <p>
+          Protect 10–13 regular players and one designated NA player.
+        </p>
+      </article>
+
+      <article>
+        <span>02</span>
+        <strong>Entry Draft</strong>
+        <p>
+          Every franchise adds exactly one rookie at 1 coin.
+        </p>
+      </article>
+
+      <article>
+        <span>03</span>
+        <strong>Salary Draft</strong>
+        <p>
+          Fill the remaining 3–6 positions with the budget left under 500.
+        </p>
+      </article>
+
+      <article>
+        <span>04</span>
+        <strong>Season</strong>
+        <p>
+          Matchups, trades, waivers, prospects, playoffs and the Cup.
+        </p>
+      </article>
+
+      <article>
+        <span>05</span>
+        <strong>Repeat</strong>
+        <p>
+          Salaries evolve. Prospects develop. Franchise history grows.
+        </p>
+      </article>
 
     </div>
 
   </section>
 
 
-  <section class="rules-section rules-rulebook">
+  <!-- =====================================================
+       RULEBOOK INTRO
+       ===================================================== -->
 
-    <div class="rules-heading">
-      <span class="rules-label">Full Rulebook</span>
-      <h2>How IceCore works.</h2>
+  <section class="ic-rulebook">
+
+    <header class="ic-section-heading ic-section-heading--rulebook">
+
+      <span class="ic-eyebrow">FULL RULEBOOK</span>
+
+      <h2>The details.</h2>
+
       <p>
-        The rules below define IceCore-specific systems. Detailed scoring,
-        transaction periods, playoff dates and other platform settings are
-        maintained directly in Yahoo Fantasy and are not duplicated here.
+        IceCore rules define the dynasty layer of the league.
+        Detailed scoring, player eligibility, matchup settings, transaction
+        periods, playoff dates and other platform-specific settings are
+        maintained directly in Yahoo Fantasy rather than duplicated here.
       </p>
-    </div>
+
+    </header>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">01</span>
-      <div>
+    <!-- 01 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">01</span>
+
+      <div class="ic-rule__body">
+
         <h3>League Structure</h3>
 
         <p>
           IceCore Dynasty is a long-term fantasy hockey league built around
           permanent franchises rather than teams rebuilt from zero each year.
-          Each General Manager controls the sporting direction of a franchise
-          across multiple seasons.
         </p>
 
         <p>
-          Franchises are assigned to conferences for identity, competition
-          and league awards. Yahoo Fantasy remains the official platform for
-          scoring, matchups, standings and playoffs.
+          Each General Manager controls the sporting direction of a franchise
+          across multiple seasons. Franchises retain their identity, history,
+          records and long-term assets regardless of who manages them.
         </p>
+
+        <p>
+          Yahoo Fantasy remains the official platform for scoring, matchups,
+          standings, player statistics and playoffs.
+        </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">02</span>
-      <div>
+    <!-- 02 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">02</span>
+
+      <div class="ic-rule__body">
+
         <h3>Roster</h3>
 
+        <div class="ic-roster-line">
+          <span>3 C</span>
+          <span>3 LW</span>
+          <span>3 RW</span>
+          <span>5 D</span>
+          <span>1 G</span>
+          <span>3 BN</span>
+        </div>
+
         <p>
-          Each franchise uses an 18-player main roster:
-          <strong>3 C · 3 LW · 3 RW · 5 D · 1 G · 3 BN.</strong>
+          Each franchise has an <strong>18-player main roster</strong>,
+          supported by <strong>2 IR+</strong> and
+          <strong>5 NA</strong> slots.
         </p>
 
         <p>
-          Each franchise also has <strong>2 IR+</strong> and
-          <strong>5 NA</strong> slots. These reserve positions do not increase
-          the 18-player draft roster.
+          IR+ and NA positions do not increase the 18-player draft roster.
+          Yahoo determines player position eligibility and IR+/NA status.
         </p>
 
         <p>
-          Position eligibility, IR+ eligibility and NA designation follow
-          Yahoo Fantasy. Additional platform-specific settings are displayed
-          directly in the league settings.
+          Additional scoring and roster specifics are displayed directly
+          in the official league settings.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">03</span>
-      <div>
+    <!-- 03 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">03</span>
+
+      <div class="ic-rule__body">
+
         <h3>Regular Keepers</h3>
 
         <p>
-          Every franchise protects between <strong>10 and 13 regular
-          keepers</strong> before the new season.
+          Every franchise protects between
+          <strong>10 and 13 regular keepers</strong> before the new season.
         </p>
 
         <p>
           A maximum of <strong>one goaltender</strong> may be included among
-          the regular keepers.
+          those regular keepers.
         </p>
 
         <p>
-          Managers may intentionally protect fewer players to create more
-          openings and greater budget flexibility in the Salary Cap Draft.
+          Protecting fewer players is a strategic choice. It creates more
+          open roster positions and greater flexibility in the Salary Cap Draft.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">04</span>
-      <div>
-        <h3>NA Players</h3>
+    <!-- 04 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">04</span>
+
+      <div class="ic-rule__body">
+
+        <h3>NA Players & Prospects</h3>
 
         <p>
           Every franchise must carry one designated NA-eligible player into
-          the next season. The designated NA keeper has a salary of
-          <strong>1 coin</strong>.
+          the following season.
+        </p>
+
+        <div class="ic-inline-value">
+          <strong>1</strong>
+          <span>coin · designated NA keeper</span>
+        </div>
+
+        <p>
+          Additional NA-eligible players may be included among the franchise's
+          10–13 regular keepers. NA players protected through the offseason
+          keeper system are assigned a salary of <strong>1 coin</strong>.
         </p>
 
         <p>
-          Managers may protect additional NA-eligible players among their
-          regular keepers. These players may also be assigned a salary of
-          <strong>1 coin</strong> when prepared through the offseason keeper
-          system.
+          The five NA slots available during the season provide room for
+          prospect development. They are not five automatic additional
+          offseason keeper positions.
         </p>
 
         <p>
-          The five NA slots available during the season are development
-          capacity, not five automatic offseason keeper positions.
-          NA players not protected for the next season are released.
+          Any NA player who is not protected is released before the new roster
+          is constructed.
         </p>
 
-        <p>
-          If a GM does not provide the required NA keeper, the Commissioner
-          will assign an eligible player according to the league fallback
-          procedure.
-        </p>
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">05</span>
-      <div>
+    <!-- 05 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">05</span>
+
+      <div class="ic-rule__body">
+
         <h3>Entry Draft</h3>
 
         <p>
-          Every franchise receives exactly <strong>one rookie selection</strong>
-          each offseason.
+          Every franchise receives exactly
+          <strong>one Entry Draft selection</strong> each offseason.
         </p>
 
         <p>
@@ -332,28 +473,37 @@ permalink: /rules/
           franchise selects last.
         </p>
 
-        <p>
-          There is <strong>no lottery</strong>. Entry Draft selections
-          <strong>cannot be traded</strong>.
-        </p>
+        <div class="ic-rule-tags">
+          <span>Reverse standings</span>
+          <span>No lottery</span>
+          <span>No pick trading</span>
+          <span>1 rookie per franchise</span>
+        </div>
 
         <p>
-          The rookie enters the franchise at a salary of
+          Every selected rookie enters the following season at a salary of
           <strong>1 coin</strong>.
         </p>
 
         <p>
-          The Entry Draft exists both as a dynasty mechanism and as a
-          competitive-balance system. Every franchise receives one new
-          prospect every year.
+          The Entry Draft is deliberately protected from pick trading.
+          Every franchise receives one new young player each season and
+          struggling franchises retain access to the highest selections.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">06</span>
-      <div>
+    <!-- 06 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">06</span>
+
+      <div class="ic-rule__body">
+
         <h3>Rookie Lists</h3>
 
         <p>
@@ -362,54 +512,75 @@ permalink: /rules/
         </p>
 
         <p>
-          If no list is submitted, the franchise remains in the draft.
-          Its default ranking is created according to the real-world order
-          of players selected in the first round of the relevant NHL Draft.
+          If a GM does not submit a list, the franchise remains in the draft.
+          Its default ranking follows the real-world order of players selected
+          in the first round of the relevant NHL Draft.
         </p>
 
         <p>
-          Missing a mandatory submission deadline may result in a warning.
-          A missed deadline never delays the draft for the rest of the league.
+          A missed mandatory submission may result in a warning, but it will
+          never delay the draft for the rest of the league.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block rulebook-block--featured">
-      <span class="rulebook-index">07</span>
-      <div>
+    <!-- 07 -->
+
+    <article class="ic-rule ic-rule--feature">
+
+      <span class="ic-rule__number">07</span>
+
+      <div class="ic-rule__body">
+
+        <span class="ic-eyebrow">FRANCHISE ECONOMY</span>
+
         <h3>Salary Cap</h3>
 
-        <div class="rulebook-number">
+        <div class="ic-big-number">
           <strong>500</strong>
           <span>IceCore Coins</span>
         </div>
 
         <p>
-          Every franchise has the same 500-coin annual Salary Cap.
-          Salaries of protected players are committed before the live
-          Salary Cap Draft and reduce the budget available in that draft.
+          Every franchise operates under the same 500-coin annual Salary Cap.
         </p>
 
         <p>
-          Player salary remains attached to the player when traded.
-          Trades do not reset salary.
+          Salaries of protected players are committed before the Live Salary
+          Cap Draft and automatically reduce the franchise's remaining draft
+          budget.
         </p>
+
+        <p>
+          A player's salary travels with him when traded.
+          Trading a player never resets his salary.
+        </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">08</span>
-      <div>
+    <!-- 08 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">08</span>
+
+      <div class="ic-rule__body">
+
         <h3>Salary Escalation</h3>
 
         <p>
-          Keeper salaries increase when a player is protected for another
-          season.
+          Salaries increase when a player is protected for another season.
+          Strong performance and exceptional value accelerate the increase.
         </p>
 
-        <div class="salary-table">
+        <div class="ic-salary-grid">
+
           <div>
             <span>Outside Top 100</span>
             <strong>+5</strong>
@@ -420,60 +591,89 @@ permalink: /rules/
             <strong>+10</strong>
           </div>
 
-          <div>
+          <div class="ic-salary-grid__hot">
             <span>Top 100 · Salary ≤ 20</span>
             <strong>+15</strong>
           </div>
+
         </div>
 
         <p>
-          Every keeper receives the base +5 increase. A Top 100 player
-          receives another +5. A Top 100 player whose previous salary is
-          20 coins or less receives another +5.
+          Every regular keeper receives a base increase of +5.
+          A Top 100 player receives an additional +5.
+          A Top 100 player whose previous salary is 20 coins or less
+          receives another +5.
         </p>
 
-        <p>
-          Example: a 1-coin player finishing inside the Top 100 can be kept
-          for <strong>16 coins</strong>. If he remains Top 100 the following
-          season, his salary becomes <strong>31 coins</strong>. Once his
-          salary exceeds 20, Top 100 performance produces a +10 increase.
-        </p>
+        <div class="ic-example">
+
+          <span>EXAMPLE</span>
+
+          <p>
+            A 1-coin breakout player finishes inside the Top 100:
+            <strong>1 → 16</strong>.
+            If he remains Top 100 the next season:
+            <strong>16 → 31</strong>.
+            Once his salary exceeds 20, continued Top 100 performance
+            produces a +10 increase.
+          </p>
+
+        </div>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">09</span>
-      <div>
+    <!-- 09 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">09</span>
+
+      <div class="ic-rule__body">
+
         <h3>Free Agents & Waivers</h3>
 
         <p>
-          A player acquired from free agency or waivers during the season
-          carries an IceCore salary of <strong>0 coins</strong>.
+          Players acquired from free agency or waivers during the season
+          carry an IceCore salary of <strong>0 coins</strong>.
         </p>
 
         <p>
-          If that player is retained for the following season, salary
-          escalation is applied to zero. He therefore becomes a
-          <strong>5-coin keeper</strong> outside the Top 100 or a
-          <strong>15-coin keeper</strong> if he finishes inside the Top 100.
+          FAAB expenditure does not become player salary.
         </p>
 
         <p>
-          FAAB expenditure never becomes player salary.
+          If a 0-coin player is protected for the next season, normal
+          escalation applies:
         </p>
+
+        <div class="ic-rule-tags">
+          <span>Outside Top 100 → 5</span>
+          <span>Top 100 → 15</span>
+        </div>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block rulebook-block--featured">
-      <span class="rulebook-index">10</span>
-      <div>
+    <!-- 10 -->
+
+    <article class="ic-rule ic-rule--feature">
+
+      <span class="ic-rule__number">10</span>
+
+      <div class="ic-rule__body">
+
+        <span class="ic-eyebrow">WAIVER ECONOMY</span>
+
         <h3>FAAB</h3>
 
-        <div class="rulebook-number">
+        <div class="ic-big-number">
           <strong>500</strong>
-          <span>FAAB</span>
+          <span>FAAB / Season</span>
         </div>
 
         <p>
@@ -482,288 +682,432 @@ permalink: /rules/
         </p>
 
         <p>
-          FAAB and Salary Cap coins are independent systems. FAAB determines
-          who wins a waiver claim; Salary Cap coins determine roster cost
-          across seasons.
+          FAAB and Salary Cap coins are independent economies.
+          FAAB determines who wins a waiver claim. Salary Cap coins determine
+          the long-term cost of building and retaining the roster.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">11</span>
-      <div>
+    <!-- 11 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">11</span>
+
+      <div class="ic-rule__body">
+
         <h3>Offseason Roster Construction</h3>
 
         <p>
-          Every franchise enters the season with an 18-player draft roster
-          constructed through four sources:
+          Every franchise enters the season with an 18-player roster
+          constructed through four sources.
         </p>
 
-        <div class="roster-formula">
-          <div><strong>10–13</strong><span>Keepers</span></div>
-          <div><strong>1</strong><span>NA Keeper</span></div>
-          <div><strong>1</strong><span>Rookie</span></div>
-          <div><strong>3–6</strong><span>Salary Draft</span></div>
-          <div class="roster-formula__total"><strong>18</strong><span>Total</span></div>
+        <div class="ic-roster-formula">
+
+          <div>
+            <strong>10–13</strong>
+            <span>Keepers</span>
+          </div>
+
+          <i>+</i>
+
+          <div>
+            <strong>1</strong>
+            <span>NA</span>
+          </div>
+
+          <i>+</i>
+
+          <div>
+            <strong>1</strong>
+            <span>Rookie</span>
+          </div>
+
+          <i>+</i>
+
+          <div>
+            <strong>3–6</strong>
+            <span>Live Draft</span>
+          </div>
+
+          <i>=</i>
+
+          <div class="ic-roster-formula__total">
+            <strong>18</strong>
+            <span>Players</span>
+          </div>
+
         </div>
 
         <p>
-          Protecting 13 regular keepers leaves three positions for the
-          Salary Cap Draft. Protecting 10 leaves six.
+          A franchise protecting 13 regular keepers has three selections
+          remaining in the live draft. A franchise protecting 10 has six.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">12</span>
-      <div>
-        <h3>Salary Cap Draft</h3>
+    <!-- 12 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">12</span>
+
+      <div class="ic-rule__body">
+
+        <h3>Live Salary Cap Draft</h3>
 
         <p>
-          After all protected players and Entry Draft rookies have been
-          assigned, remaining roster positions are filled through Yahoo's
-          Live Salary Cap Draft.
+          After keepers, the designated NA player and Entry Draft rookies
+          have been assigned, all remaining roster positions are filled
+          through Yahoo's Live Salary Cap Draft.
         </p>
 
         <p>
-          Keeper salaries are deducted from each franchise's 500-coin cap
-          before the draft. Different franchises can therefore enter the
-          same live draft with different available budgets and different
-          numbers of open roster positions.
+          Every franchise starts from the same 500-coin cap, but committed
+          keeper salaries are deducted before the draft.
         </p>
+
+        <div class="ic-draft-example">
+
+          <div>
+            <span>Franchise A</span>
+            <strong>180</strong>
+            <small>committed</small>
+            <b>320 available</b>
+          </div>
+
+          <div>
+            <span>Franchise B</span>
+            <strong>310</strong>
+            <small>committed</small>
+            <b>190 available</b>
+          </div>
+
+        </div>
+
+        <p>
+          Each GM therefore enters the same live market with a roster and
+          budget shaped by previous franchise decisions.
+        </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">13</span>
-      <div>
+    <!-- 13 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">13</span>
+
+      <div class="ic-rule__body">
+
         <h3>Trades</h3>
 
         <p>
-          Players may be traded according to the league calendar and Yahoo
-          transaction settings.
+          Players may be traded according to the current league calendar
+          and Yahoo transaction settings.
         </p>
 
         <p>
-          Player salary always travels with the player. IceCore does not use
-          salary retention or coin transfers between franchises.
+          Player salary always travels with the player.
+          IceCore does not use salary retention or transfers of Salary Cap
+          coins between franchises.
         </p>
 
         <p>
           Entry Draft selections cannot be traded.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">14</span>
-      <div>
-        <h3>Deadlines & Commissioner Fallbacks</h3>
+    <!-- 14 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">14</span>
+
+      <div class="ic-rule__body">
+
+        <h3>Deadlines & Fallbacks</h3>
 
         <p>
-          IceCore is designed so that one unavailable GM cannot stop an
-          offseason process involving the entire league.
+          IceCore is designed so that one unavailable GM cannot stop a
+          league-wide offseason process.
         </p>
 
         <p>
-          Keeper lists and other mandatory submissions must be provided
-          through the designated Yahoo commissioner post before the announced
-          deadline.
+          Keeper selections, rookie lists and other mandatory submissions
+          must be provided through the designated Yahoo commissioner post
+          before the announced deadline.
         </p>
 
         <p>
-          If no valid keeper list is submitted, the Commissioner creates one
-          using the predefined objective fallback procedure, prioritizing
-          eligible players by fantasy-point performance and completing the
-          required roster structure where necessary.
+          If a valid keeper list is not submitted, the Commissioner will
+          construct the required list using an objective fallback based on
+          fantasy-point performance.
         </p>
 
         <p>
-          If no rookie list is submitted, the real NHL first-round draft order
-          becomes that franchise's default list.
+          If required roster structure cannot be completed from those
+          players, the Commissioner may use eligible reserve players and,
+          where necessary, assign an available NA player at the standard
+          <strong>1-coin NA salary</strong>.
         </p>
 
         <p>
-          These procedures exist to preserve the schedule, not to optimize an
-          absent GM's franchise.
+          If no rookie ranking is submitted, the franchise receives a
+          default ranking based on the actual order of the relevant NHL
+          first round.
         </p>
+
+        <p>
+          Commissioner fallbacks preserve the schedule.
+          They are not used to optimize an absent GM's franchise.
+        </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">15</span>
-      <div>
+    <!-- 15 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">15</span>
+
+      <div class="ic-rule__body">
+
         <h3>GM Responsibilities</h3>
 
         <p>
-          IceCore does not require constant offseason attention.
-          Managers are expected to handle a small number of important
-          franchise decisions and meet clearly announced deadlines.
+          IceCore does not require managers to spend the offseason checking
+          the league every day.
         </p>
 
         <p>
-          Required participation includes keeper preparation, Entry Draft
-          preparation, draft participation or preparation, reasonable
-          in-season roster management and responses to essential league
-          administration.
+          GMs are expected to complete a limited number of meaningful
+          franchise decisions, respect announced deadlines, prepare for
+          drafts and maintain a reasonably active roster during the season.
         </p>
 
         <p>
-          Missing a mandatory deadline may result in a warning. Repeated
-          inactivity, repeated missed obligations or abandonment of a
-          franchise may result in replacement of the General Manager.
+          Missing a mandatory deadline may result in a warning.
+          Repeated missed obligations, prolonged inactivity or abandonment
+          of a franchise may result in replacement of the General Manager.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">16</span>
-      <div>
+    <!-- 16 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">16</span>
+
+      <div class="ic-rule__body">
+
         <h3>Abandoned Franchises</h3>
 
         <p>
-          The franchise exists independently of its current General Manager.
+          A franchise exists independently of its current General Manager.
         </p>
 
         <p>
-          When a GM leaves, the franchise retains its roster, salaries,
-          history, records, awards and Entry Draft position.
+          If a GM leaves, the franchise retains its roster, salaries,
+          prospects, history, records, awards and Entry Draft position.
         </p>
 
         <p>
           The Commissioner may temporarily operate the franchise until a
-          replacement GM is found. Temporary management is limited to
-          maintaining the roster, completing required procedures and
-          protecting competitive integrity.
+          replacement GM is appointed.
         </p>
+
+        <p>
+          Temporary management exists to maintain the roster, meet required
+          deadlines and preserve competitive integrity — not to strategically
+          rebuild the franchise for its future manager.
+        </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">17</span>
-      <div>
+    <!-- 17 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">17</span>
+
+      <div class="ic-rule__body">
+
         <h3>Competitive Integrity</h3>
 
         <p>
           Managers are free to rebuild, contend, speculate on prospects,
-          overpay for stars and pursue unconventional strategies.
+          overpay for stars, sell established players or pursue unconventional
+          roster strategies.
         </p>
 
         <p>
           Collusion, coordinated roster dumping, waiver manipulation or
-          actions intended primarily to provide an unfair benefit to another
-          franchise may be reviewed by the Commissioner.
+          actions intended primarily to provide an unfair advantage to
+          another franchise may be reviewed by the Commissioner.
         </p>
 
-        <blockquote>
+        <blockquote class="ic-rule-quote">
           Bad strategy is allowed.<br>
           Collusion is not.
         </blockquote>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">18</span>
-      <div>
-        <h3>Competition & Playoffs</h3>
+    <!-- 18 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">18</span>
+
+      <div class="ic-rule__body">
+
+        <h3>Competition</h3>
 
         <p>
           Yahoo Fantasy is the authoritative source for scoring, matchups,
-          standings, playoff qualification and player statistics.
+          standings, player statistics and playoff qualification.
         </p>
 
         <p>
-          Detailed scoring categories, transaction limits, dates and other
-          settings are maintained directly in Yahoo rather than duplicated
-          throughout the IceCore rulebook.
+          Detailed scoring categories, dates, transaction limits and other
+          season-specific settings are maintained directly on Yahoo rather
+          than duplicated throughout this rulebook.
         </p>
 
         <p>
           The winner of the championship playoffs becomes the
           <strong>IceCore Cup Champion</strong>.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
 
-    <div class="rulebook-block">
-      <span class="rulebook-index">19</span>
-      <div>
+    <!-- 19 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">19</span>
+
+      <div class="ic-rule__body">
+
         <h3>Conferences & Awards</h3>
 
         <p>
-          Franchises are divided between the Eastern and Western Conferences.
-          Conference alignment adds franchise identity and a second layer of
-          regular-season competition.
+          Franchises are assigned to the Eastern and Western Conferences,
+          creating an additional layer of identity and competition.
         </p>
 
-        <p>
-          IceCore recognizes the league champion as well as notable
-          regular-season and management achievements.
-        </p>
-
-        <div class="awards-list">
+        <div class="ic-awards">
           <span>IceCore Cup Champion</span>
           <span>Eastern Conference Champion</span>
           <span>Western Conference Champion</span>
           <span>Regular Season Champion</span>
           <span>GM of the Year</span>
         </div>
-      </div>
-    </div>
-
-
-    <div class="rulebook-block">
-      <span class="rulebook-index">20</span>
-      <div>
-        <h3>GM Ranking & Franchise History</h3>
 
         <p>
-          IceCore records franchise history across seasons. Championships,
-          conference titles, regular-season results, draft history and other
-          achievements can become part of each franchise's permanent record.
+          Additional honors may develop naturally as the league builds its
+          own history and traditions.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- 20 -->
+
+    <article class="ic-rule">
+
+      <span class="ic-rule__number">20</span>
+
+      <div class="ic-rule__body">
+
+        <h3>GM Ranking & Franchise Legacy</h3>
+
+        <p>
+          IceCore records franchise history across seasons.
+          Championships, conference titles, regular-season performance,
+          draft history and other achievements can become part of each
+          franchise's permanent record.
         </p>
 
         <p>
-          General Managers may also be ranked over time based on competitive
+          General Managers may also be ranked over time using competitive
           success, activity, reliability, draft participation and long-term
           league contribution.
         </p>
 
         <p>
-          GM Ranking is a historical and community feature. It does not alter
-          Yahoo scoring or competitive results.
+          GM Ranking is a historical and community feature.
+          It does not alter Yahoo scoring or competitive results.
         </p>
+
       </div>
-    </div>
+
+    </article>
 
   </section>
 
 
-  <section class="rules-closing">
+  <!-- =====================================================
+       CLOSING
+       ===================================================== -->
 
-    <span class="rules-label">The IceCore Standard</span>
+  <section class="ic-rules-closing">
 
-    <h2>Serious league.<br>Easy league to live with.</h2>
+    <span class="ic-eyebrow">THE ICECORE STANDARD</span>
+
+    <h2>
+      Serious league.<br>
+      Easy league to live with.
+    </h2>
 
     <p>
-      IceCore is designed for managers who enjoy building something over
-      time — without requiring them to spend every summer managing a
-      spreadsheet.
+      IceCore is for managers who enjoy building something over time
+      without spending every summer managing spreadsheets and administrative
+      systems.
     </p>
 
     <p>
       Processes should be transparent. Deadlines should be predictable.
-      Commissioner decisions should be consistent. And once the work is done,
-      the league should get out of the way and let the hockey matter.
+      Commissioner decisions should be consistent.
+    </p>
+
+    <p>
+      And once the work is done, the league should get out of the way
+      and let the hockey matter.
     </p>
 
     <strong>Build a franchise worth remembering.</strong>
