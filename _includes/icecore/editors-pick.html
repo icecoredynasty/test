@@ -1,41 +1,61 @@
 <section class="editors-pick">
 
-    <div class="section-heading">
+  <div class="section-heading">
+    <h3>Featured Guide</h3>
+  </div>
 
-        <h3>Featured Guide</h3>
+  {% assign guides = site.journal
+    | where: "featured_guide", true
+    | sort: "date"
+    | reverse
+  %}
 
-    </div>
+  {% assign guide = guides.first %}
 
-   <a class="feature-card feature-card-guide" href="#">
+  {% if guide %}
 
-        <div class="feature-image">
+    <a class="feature-card feature-card-guide"
+       href="{{ guide.url | relative_url }}">
 
-            <img src="/test/assets/images/editor-content.jpg" alt="Featured Guide">
+      <div class="feature-image">
 
+        {% if guide.image %}
+          <img
+            src="{{ guide.image | relative_url }}"
+            alt="{{ guide.title | escape }}"
+          >
+        {% endif %}
+
+      </div>
+
+      <div class="feature-overlay">
+
+        <div class="feature-date">
+          {{ guide.date | date: "%b %d" | upcase }}
         </div>
 
-        <div class="feature-overlay">
+        <h2>
+          {{ guide.title }}
+        </h2>
 
-    <div class="feature-date">
+        {% if guide.excerpt %}
+          <p>
+            {{ guide.excerpt | strip_html | truncate: 120 }}
+          </p>
+        {% endif %}
 
-        JUL 12
-
-    </div>
-
-    <h2>
-
-            Building a Dynasty Starts Long Before the Draft
-
-    </h2>
-
-    <p>
-
-        Every successful franchise begins years before opening night...
-
-    </p>
-
-</div>
+      </div>
 
     </a>
+
+  {% else %}
+
+    <div class="feature-card feature-card-guide">
+      <div class="feature-overlay">
+        <h2>Guide coming soon.</h2>
+      </div>
+    </div>
+
+  {% endif %}
 
 </section>
