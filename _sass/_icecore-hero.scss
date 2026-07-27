@@ -134,6 +134,55 @@
 
 }
 
+.icecore-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.icecore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.icecore-button--primary {
+  color: #fff !important;
+}
+
+.icecore-button--primary:visited,
+.icecore-button--primary:hover,
+.icecore-button--primary:focus {
+  color: #fff !important;
+}
+
+.icecore-button--join {
+  background: #fff;
+  color: #111 !important;
+  border: 2px solid #fff;
+}
+
+.icecore-button--join:visited {
+  color: #111 !important;
+}
+
+.icecore-button--join:hover,
+.icecore-button--join:focus {
+  background: transparent;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
 .hero-line{
 
     width:90px;
