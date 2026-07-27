@@ -391,3 +391,116 @@ permalink: /league/
   </section>
 
 </div>
+
+  <!-- JOIN ICECORE -->
+  <section class="league-join" id="join">
+
+    <div class="league-join__intro">
+
+      <span class="league-eyebrow">INAUGURAL SEASON · 2026–27</span>
+
+      <h2>
+        Your franchise<br>
+        starts here.
+      </h2>
+
+      <p class="league-join__lead">
+        IceCore Dynasty is recruiting General Managers for its inaugural season.
+        Twenty permanent franchises. One shared history waiting to be written.
+      </p>
+
+    </div>
+
+
+    <div class="league-join__grid">
+
+      <div class="league-join__copy">
+
+        <h3>We're looking for GMs who stay.</h3>
+
+        <p>
+          You don't need years of dynasty experience or an encyclopedic
+          knowledge of every NHL prospect.
+        </p>
+
+        <p>
+          We're looking for active, reliable General Managers who enjoy
+          hockey, long-term roster building and making decisions that matter
+          beyond a single season.
+        </p>
+
+        <p>
+          Learn the format. Build your franchise. Meet the deadlines.
+          Compete your way.
+        </p>
+
+      </div>
+
+
+      <div class="league-join__card">
+
+        <span class="league-join__label">GM APPLICATION</span>
+
+        <h3>Tell us about yourself.</h3>
+
+        <p>
+          Send a short introduction including:
+        </p>
+
+        <ul>
+          <li>Name or nickname</li>
+          <li>Country / time zone</li>
+          <li>Fantasy hockey experience</li>
+          <li>Why IceCore interests you</li>
+          <li>Preferred franchise(s), if any</li>
+        </ul>
+
+        <a
+          href="mailto:TVOJMAIL@gmail.com?subject=IceCore%20Dynasty%20-%20GM%20Application&body=Name%20or%20nickname%3A%0A%0ACountry%20%2F%20time%20zone%3A%0A%0AFantasy%20hockey%20experience%3A%0A%0AWhy%20IceCore%3A%0A%0APreferred%20franchise(s)%3A%0A%0AAnything%20else%3A%0A"
+          class="league-join__button"
+        >
+          Apply for a franchise →
+        </a>
+
+        <span class="league-join__deadline">
+          Applications close · September 19, 2026
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="league-join__footer">
+
+      <div>
+        <strong>20</strong>
+        <span>Franchises</span>
+      </div>
+
+      <div>
+        <strong>20</strong>
+        <span>Players</span>
+      </div>
+
+      <div>
+        <strong>500</strong>
+        <span>Coins</span>
+      </div>
+
+      <div>
+        <strong>1</strong>
+        <span>Shared history</span>
+      </div>
+
+    </div>
+
+
+    <div class="league-end__links">
+      <a href="{{ '/teams/' | relative_url }}">Meet the franchises →</a>
+      <a href="{{ '/rules/' | relative_url }}">Read the rules →</a>
+    </div>
+
+  </section>
+
+</div>
