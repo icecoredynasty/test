@@ -513,10 +513,10 @@ permalink: /rules/
           in the first round of the relevant NHL Draft.
         </p>
 
-        <p>
-          A missed mandatory submission may result in a warning,
-          but it will never delay the Entry Draft for the rest of the league.
-        </p>
+<p>
+  Missing the Entry Draft priority-list deadline does not result in a league
+  penalty. The default NHL Draft order will be used automatically.
+</p>
 
       </div>
 
