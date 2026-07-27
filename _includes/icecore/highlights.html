@@ -1,61 +1,42 @@
 <section class="highlights">
 
-    <div class="section-heading">
-        <h3>Highlights</h3>
-    </div>
+  <div class="section-heading">
+    <h3>Highlights</h3>
+  </div>
+
+  {% assign highlights = site.journal
+    | where: "highlight", true
+    | sort: "date"
+    | reverse
+  %}
+
+  {% for article in highlights limit: 3 %}
 
     <article class="highlight-item">
 
-        <img src="/test/assets/images/highlight1.jpg" alt="">
+      {% if article.image %}
+        <img
+          src="{{ article.image | relative_url }}"
+          alt="{{ article.title | escape }}"
+        >
+      {% endif %}
 
-        <div class="highlight-content">
+      <div class="highlight-content">
 
-            <div class="highlight-date">JUL 20</div>
-
-            <h4>
-                <a href="#">
-                    Aurora Foxes Continue Their Rebuild
-                </a>
-            </h4>
-
+        <div class="highlight-date">
+          {{ article.date | date: "%b %d" | upcase }}
         </div>
+
+        <h4>
+          <a href="{{ article.url | relative_url }}">
+            {{ article.title }}
+          </a>
+        </h4>
+
+      </div>
 
     </article>
 
-    <article class="highlight-item">
-
-        <img src="/test/assets/images/highlight2.jpg" alt="">
-
-        <div class="highlight-content">
-
-            <div class="highlight-date">JUL 18</div>
-
-            <h4>
-                <a href="#">
-                    Entry Draft Order Officially Announced
-                </a>
-            </h4>
-
-        </div>
-
-    </article>
-
-    <article class="highlight-item">
-
-        <img src="/test/assets/images/highlight3.jpg" alt="">
-
-        <div class="highlight-content">
-
-            <div class="highlight-date">JUL 15</div>
-
-            <h4>
-                <a href="#">
-                    Coin System Explained
-                </a>
-            </h4>
-
-        </div>
-
-    </article>
+  {% endfor %}
 
 </section>
