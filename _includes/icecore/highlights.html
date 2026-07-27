@@ -4,11 +4,7 @@
     <h3>Highlights</h3>
   </div>
 
-  {% assign highlights = site.journal
-    | where: "highlight", true
-    | sort: "date"
-    | reverse
-  %}
+{% assign highlights = site.posts | where: "highlight", true | sort: "date" | reverse %}
 
   {% for article in highlights limit: 3 %}
 
