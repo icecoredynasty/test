@@ -1,45 +1,63 @@
 <section class="latest-news">
 
-    <div class="section-heading">
-        <h3>Latest News</h3>
-    </div>
+  <div class="section-heading">
+    <h3>Latest from IceCore</h3>
+  </div>
 
-    {% assign latest = site.posts | sort: "date" | reverse %}
+  {% assign latest = site.posts | sort: "date" | reverse %}
+
+  <div class="latest-news__list">
 
     {% for post in latest limit:3 %}
 
-    <article class="news-item">
+      <article class="latest-news__item">
 
-        <div class="news-date">
+        <div class="latest-news__meta">
+
+          <span class="latest-news__date">
             {{ post.date | date: "%b %d" | upcase }}
-        </div>
+          </span>
 
-        <div class="news-content">
-
-            <span class="news-category">
-                {% if post.categories %}
-                    {{ post.categories | first | upcase }}
-                {% else %}
-                    JOURNAL
-                {% endif %}
-            </span>
-
-            <h4>
-                <a href="{{ post.url | relative_url }}">
-                    {{ post.title }}
-                </a>
-            </h4>
-
-            {% if post.excerpt %}
-            <p>
-                {{ post.excerpt | strip_html | truncate: 90 }}
-            </p>
+          <span class="latest-news__category">
+            {% if post.categories %}
+              {{ post.categories | first | upcase }}
+            {% else %}
+              JOURNAL
             {% endif %}
+          </span>
 
         </div>
 
-    </article>
+
+        <div class="latest-news__content">
+
+          <h4>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </h4>
+
+          {% if post.excerpt %}
+            <p>
+              {{ post.excerpt | strip_html | truncate: 115 }}
+            </p>
+          {% endif %}
+
+        </div>
+
+
+        <a
+          class="latest-news__arrow"
+          href="{{ post.url | relative_url }}"
+          aria-label="Read {{ post.title | escape }}"
+        >
+          →
+        </a>
+
+      </article>
 
     {% endfor %}
+
+  </div>
 
 </section>
