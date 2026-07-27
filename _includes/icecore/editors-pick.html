@@ -4,13 +4,8 @@
     <h3>Featured Guide</h3>
   </div>
 
-  {% assign guides = site.journal
-    | where: "featured_guide", true
-    | sort: "date"
-    | reverse
-  %}
-
-  {% assign guide = guides.first %}
+{% assign guides = site.posts | where: "featured_guide", true | sort: "date" | reverse %}
+{% assign guide = guides.first %}
 
   {% if guide %}
 
