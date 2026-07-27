@@ -379,6 +379,17 @@ permalink: /league/
     </h2>
 
     <p>
+  <!-- CTA -->
+  <section class="league-end">
+
+    <span class="league-eyebrow">ICECORE DYNASTY</span>
+
+    <h2>
+      Twenty franchises.<br>
+      One history.
+    </h2>
+
+    <p>
       The rules define the framework.
       The General Managers decide what happens next.
     </p>
@@ -390,117 +401,285 @@ permalink: /league/
 
   </section>
 
-</div>
 
   <!-- JOIN ICECORE -->
   <section class="league-join" id="join">
 
-    <div class="league-join__intro">
+/* =========================================================
+   JOIN ICECORE
+   ========================================================= */
 
-      <span class="league-eyebrow">INAUGURAL SEASON · 2026–27</span>
+.league-join {
+  position: relative;
+  padding: clamp(5rem, 9vw, 8rem) clamp(1.5rem, 5vw, 5rem);
+  background: #0b0d10;
+  color: #fff;
+  overflow: hidden;
+}
 
-      <h2>
-        Your franchise<br>
-        starts here.
-      </h2>
+.league-join::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: clamp(1.5rem, 5vw, 5rem);
+  width: 72px;
+  height: 4px;
+  background: #fff;
+}
 
-      <p class="league-join__lead">
-        IceCore Dynasty is recruiting General Managers for its inaugural season.
-        Twenty permanent franchises. One shared history waiting to be written.
-      </p>
+.league-join__intro {
+  max-width: 850px;
+  margin-bottom: clamp(3.5rem, 7vw, 6rem);
+}
 
-    </div>
+.league-join .league-eyebrow {
+  color: rgba(255, 255, 255, 0.55);
+}
 
+.league-join__intro h2 {
+  margin: 1rem 0 1.5rem;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  color: #fff;
+}
 
-    <div class="league-join__grid">
-
-      <div class="league-join__copy">
-
-        <h3>We're looking for GMs who stay.</h3>
-
-        <p>
-          You don't need years of dynasty experience or an encyclopedic
-          knowledge of every NHL prospect.
-        </p>
-
-        <p>
-          We're looking for active, reliable General Managers who enjoy
-          hockey, long-term roster building and making decisions that matter
-          beyond a single season.
-        </p>
-
-        <p>
-          Learn the format. Build your franchise. Meet the deadlines.
-          Compete your way.
-        </p>
-
-      </div>
-
-
-      <div class="league-join__card">
-
-        <span class="league-join__label">GM APPLICATION</span>
-
-        <h3>Tell us about yourself.</h3>
-
-        <p>
-          Send a short introduction including:
-        </p>
-
-        <ul>
-          <li>Name or nickname</li>
-          <li>Country / time zone</li>
-          <li>Fantasy hockey experience</li>
-          <li>Why IceCore interests you</li>
-          <li>Preferred franchise(s), if any</li>
-        </ul>
-
-        <a
-          href="mailto:TVOJMAIL@gmail.com?subject=IceCore%20Dynasty%20-%20GM%20Application&body=Name%20or%20nickname%3A%0A%0ACountry%20%2F%20time%20zone%3A%0A%0AFantasy%20hockey%20experience%3A%0A%0AWhy%20IceCore%3A%0A%0APreferred%20franchise(s)%3A%0A%0AAnything%20else%3A%0A"
-          class="league-join__button"
-        >
-          Apply for a franchise →
-        </a>
-
-        <span class="league-join__deadline">
-          Applications close · September 19, 2026
-        </span>
-
-      </div>
-
-    </div>
+.league-join__lead {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+}
 
 
-    <div class="league-join__footer">
+/* MAIN GRID */
 
-      <div>
-        <strong>20</strong>
-        <span>Franchises</span>
-      </div>
+.league-join__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
 
-      <div>
-        <strong>20</strong>
-        <span>Players</span>
-      </div>
+.league-join__copy {
+  max-width: 650px;
+}
 
-      <div>
-        <strong>500</strong>
-        <span>Coins</span>
-      </div>
+.league-join__copy h3 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: #fff;
+}
 
-      <div>
-        <strong>1</strong>
-        <span>Shared history</span>
-      </div>
+.league-join__copy p {
+  max-width: 600px;
+  margin: 0 0 1.25rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.68);
+}
 
-    </div>
+
+/* APPLICATION CARD */
+
+.league-join__card {
+  padding: clamp(2rem, 4vw, 3rem);
+  background: #fff;
+  color: #111;
+}
+
+.league-join__label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #737b82;
+}
+
+.league-join__card h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: #111;
+}
+
+.league-join__card p {
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+  color: #5e666d;
+}
+
+.league-join__card ul {
+  margin: 0 0 2rem;
+  padding-left: 1.2rem;
+}
+
+.league-join__card li {
+  margin: 0.55rem 0;
+  line-height: 1.45;
+  color: #343a40;
+}
 
 
-    <div class="league-end__links">
-      <a href="{{ '/teams/' | relative_url }}">Meet the franchises →</a>
-      <a href="{{ '/rules/' | relative_url }}">Read the rules →</a>
-    </div>
+/* APPLY BUTTON */
+
+.league-join__button {
+  display: flex;
+  width: 100%;
+  min-height: 58px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 1.4rem;
+
+  background: #111;
+  border: 2px solid #111;
+
+  color: #fff !important;
+  text-decoration: none !important;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.league-join__button:visited {
+  color: #fff !important;
+}
+
+.league-join__button:hover,
+.league-join__button:focus {
+  background: transparent;
+  color: #111 !important;
+  transform: translateY(-2px);
+}
+
+.league-join__deadline {
+  display: block;
+  margin-top: 1rem;
+
+  text-align: center;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #81878c;
+}
+
+
+/* NUMBERS */
+
+.league-join__footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: clamp(4rem, 8vw, 7rem);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.league-join__footer > div {
+  padding: 2rem 1rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.league-join__footer > div:last-child {
+  border-right: 0;
+}
+
+.league-join__footer strong {
+  display: block;
+
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+
+  color: #fff;
+}
+
+.league-join__footer span {
+  display: block;
+  margin-top: 0.55rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* BOTTOM LINKS */
+
+.league-join .league-end__links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.league-join .league-end__links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.league-join .league-end__links a:hover {
+  color: #fff;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .league-join__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .league-join__footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .league-join__footer > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .league-join__footer > div:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .league-join__intro h2 {
+    font-size: 3rem;
+  }
+
+  .league-join__card {
+    padding: 1.6rem;
+  }
+
+}
 
   </section>
+
 
 </div>
