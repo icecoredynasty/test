@@ -5,8 +5,6 @@
   </div>
 
 
-  <!-- RECRUITMENT DEADLINE -->
-
   <article class="calendar-event">
 
     <div class="calendar-date">
@@ -15,19 +13,16 @@
     </div>
 
     <div class="calendar-info">
-
-      <h4>Recruitment Deadline</h4>
-
-      <p>
-        Final day for inaugural GM applications.
-      </p>
-
+      <h4>
+        <a href="{{ '/league/#join' | relative_url }}">
+          Recruitment Deadline
+        </a>
+      </h4>
+      <p>23:59 CEST</p>
     </div>
 
   </article>
 
-
-  <!-- INAUGURAL DRAFT -->
 
   <article class="calendar-event">
 
@@ -37,19 +32,16 @@
     </div>
 
     <div class="calendar-info">
-
-      <h4>Inaugural Salary Cap Draft</h4>
-
-      <p>
-        21:00 CEST · The first IceCore rosters are built.
-      </p>
-
+      <h4>
+        <a href="{{ '/rules/#salary-cap-draft' | relative_url }}">
+          Salary Cap Draft
+        </a>
+      </h4>
+      <p>21:00 CEST</p>
     </div>
 
   </article>
 
-
-  <!-- OPENING NIGHT -->
 
   <article class="calendar-event">
 
@@ -59,38 +51,29 @@
     </div>
 
     <div class="calendar-info">
-
       <h4>Opening Night</h4>
-
-      <p>
-        The inaugural IceCore Dynasty season begins.
-      </p>
-
+      <p>2026–27 Season</p>
     </div>
 
   </article>
 
 
-  <!-- FUTURE EVENTS -->
-
   <div class="calendar-hidden" id="calendar-hidden">
 
-
     <article class="calendar-event">
 
       <div class="calendar-date">
-        <span>2027</span>
+        <span>TBD</span>
         <strong>—</strong>
       </div>
 
       <div class="calendar-info">
-
-        <h4>Keeper Deadline</h4>
-
-        <p>
-          Date to be announced.
-        </p>
-
+        <h4>
+          <a href="{{ '/rules/#keepers' | relative_url }}">
+            Keeper Deadline
+          </a>
+        </h4>
+        <p>2027 Offseason</p>
       </div>
 
     </article>
@@ -99,18 +82,17 @@
     <article class="calendar-event">
 
       <div class="calendar-date">
-        <span>2027</span>
+        <span>TBD</span>
         <strong>—</strong>
       </div>
 
       <div class="calendar-info">
-
-        <h4>IceCore Entry Draft</h4>
-
-        <p>
-          Date to be announced.
-        </p>
-
+        <h4>
+          <a href="{{ '/rules/#entry-draft' | relative_url }}">
+            Entry Draft
+          </a>
+        </h4>
+        <p>2027 Offseason</p>
       </div>
 
     </article>
@@ -119,18 +101,13 @@
     <article class="calendar-event">
 
       <div class="calendar-date">
-        <span>2027</span>
+        <span>TBD</span>
         <strong>—</strong>
       </div>
 
       <div class="calendar-info">
-
         <h4>Salary Cap Draft</h4>
-
-        <p>
-          Date to be announced.
-        </p>
-
+        <p>2027 Offseason</p>
       </div>
 
     </article>
@@ -139,45 +116,34 @@
 
 
   <div class="calendar-more">
-
     <a href="#" id="calendar-toggle">
       Show Full Schedule ▼
     </a>
-
   </div>
 
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-  document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("calendar-toggle");
+      const hidden = document.getElementById("calendar-hidden");
 
-    const toggle = document.getElementById("calendar-toggle");
-    const hidden = document.getElementById("calendar-hidden");
+      if (!toggle || !hidden) return;
 
-    if (!toggle || !hidden) return;
+      hidden.style.display = "none";
 
-    hidden.style.display = "none";
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    toggle.addEventListener("click", function(e) {
+        const isHidden = hidden.style.display === "none";
 
-      e.preventDefault();
-
-      if (hidden.style.display === "none") {
-
-        hidden.style.display = "block";
-        toggle.innerHTML = "Hide Schedule ▲";
-
-      } else {
-
-        hidden.style.display = "none";
-        toggle.innerHTML = "Show Full Schedule ▼";
-
-      }
+        hidden.style.display = isHidden ? "block" : "none";
+        toggle.innerHTML = isHidden
+          ? "Hide Schedule ▲"
+          : "Show Full Schedule ▼";
+      });
 
     });
-
-  });
-
   </script>
 
 </section>
