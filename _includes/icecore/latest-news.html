@@ -4,9 +4,9 @@
         <h3>Latest News</h3>
     </div>
 
-    {% assign news = site.posts | where: "category", "news" %}
+    {% assign latest = site.posts | sort: "date" | reverse %}
 
-    {% for post in news limit:3 %}
+    {% for post in latest limit:3 %}
 
     <article class="news-item">
 
@@ -16,15 +16,25 @@
 
         <div class="news-content">
 
+            <span class="news-category">
+                {% if post.categories %}
+                    {{ post.categories | first | upcase }}
+                {% else %}
+                    JOURNAL
+                {% endif %}
+            </span>
+
             <h4>
-                <a href="{{ post.url }}">
+                <a href="{{ post.url | relative_url }}">
                     {{ post.title }}
                 </a>
             </h4>
 
+            {% if post.excerpt %}
             <p>
                 {{ post.excerpt | strip_html | truncate: 90 }}
             </p>
+            {% endif %}
 
         </div>
 
