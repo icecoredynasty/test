@@ -1,6 +1,6 @@
 ---
 title: "The General Manager's Guide to IceCore"
-date: 2026-07-28
+date: 2026-07-27
 categories:
   - guide
 tags:
