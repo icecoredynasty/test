@@ -163,6 +163,56 @@
   color: #777;
 }
 
+.rules-hero {
+  position: relative;
+
+  width: 100vw;
+  max-width: none;
+  min-height: 460px;
+
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.rules-hero__image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.rules-hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 12, 15, 0.92) 0%,
+      rgba(8, 12, 15, 0.66) 42%,
+      rgba(8, 12, 15, 0.08) 100%
+    );
+}
+
+.rules-hero__content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 80px 0 62px;
+
+  color: #fff;
+}
+
 
 /* =========================================================
    INTRO / PHILOSOPHY
