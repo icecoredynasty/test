@@ -124,7 +124,7 @@ footer:
 
     - label: Contact
       icon: fas fa-envelope
-      url: /contact/
+      url: mailto:icecoredynasty@gmail.com
 
     - label: Legal
       icon: fas fa-scale-balanced
