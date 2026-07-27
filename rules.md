@@ -458,37 +458,34 @@ permalink: /rules/
 
       <div class="ic-rule__body">
 
-        <h3>Entry Draft</h3>
+<h3>Entry Draft</h3>
 
-        <p>
-          Every franchise receives exactly
-          <strong>one Entry Draft selection</strong>
-          each offseason.
-        </p>
+<p>
+  Beginning with the 2027 offseason, each franchise receives one selection
+  in the annual IceCore Entry Draft.
+</p>
 
-        <p>
-          Draft order is the reverse of the previous season's final standings:
-          the lowest-ranked franchise selects first and the highest-ranked
-          franchise selects last.
-        </p>
+<p>
+  Draft order is determined by reverse final standings. There is no lottery,
+  and Entry Draft selections cannot be traded.
+</p>
 
-        <div class="ic-rule-tags">
-          <span>Reverse standings</span>
-          <span>No lottery</span>
-          <span>No pick trading</span>
-          <span>1 rookie per franchise</span>
-        </div>
+<p>
+  Each General Manager may submit a ranked rookie priority list before the
+  published deadline. When a franchise is on the clock, the highest-ranked
+  available player on that list will be selected.
+</p>
 
-        <p>
-          Every selected rookie enters the following season at a salary of
-          <strong>1 coin</strong>.
-        </p>
+<p>
+  Submitting a priority list is optional. If no list is submitted, the
+  franchise will automatically receive the highest available eligible player
+  according to the real-world NHL Draft order.
+</p>
 
-        <p>
-          Entry Draft selections cannot be traded. Every franchise therefore
-          receives one new young player each season, while struggling teams
-          retain access to the highest selections.
-        </p>
+<p>
+  Entry Draft selections enter their IceCore franchise at a salary of
+  1 Coin.
+</p>
 
       </div>
 
