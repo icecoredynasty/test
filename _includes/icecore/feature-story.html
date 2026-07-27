@@ -1,5 +1,10 @@
+{% assign features = site.journal
+  | where: "featured", true
+  | sort: "date"
+  | reverse
+%}
 
-{% assign feature = site.posts | where: "featured", true | first %}
+{% assign feature = features.first %}
 
 <div class="section-heading">
     <h3>Feature Story</h3>
@@ -9,7 +14,12 @@
 <a class="feature-card" href="{{ feature.url | relative_url }}">
 
     <div class="feature-image">
-        <img src="{{ feature.image | relative_url }}" alt="{{ feature.title }}">
+        {% if feature.image %}
+        <img
+            src="{{ feature.image | relative_url }}"
+            alt="{{ feature.title | escape }}"
+        >
+        {% endif %}
     </div>
 
     <div class="feature-overlay">
@@ -20,7 +30,9 @@
 
         <h2>{{ feature.title }}</h2>
 
-        <p>{{ feature.excerpt }}</p>
+        {% if feature.excerpt %}
+        <p>{{ feature.excerpt | strip_html | truncate: 160 }}</p>
+        {% endif %}
 
     </div>
 
