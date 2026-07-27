@@ -1,195 +1,183 @@
 <section class="calendar">
 
-    <div class="section-heading">
+  <div class="section-heading">
+    <h3>Upcoming Events</h3>
+  </div>
 
-        <h3>Upcoming events</h3>
+
+  <!-- RECRUITMENT DEADLINE -->
+
+  <article class="calendar-event">
+
+    <div class="calendar-date">
+      <span>SEP</span>
+      <strong>19</strong>
+    </div>
+
+    <div class="calendar-info">
+
+      <h4>Recruitment Deadline</h4>
+
+      <p>
+        Final day for inaugural GM applications.
+      </p>
 
     </div>
 
-    <article class="calendar-event">
+  </article>
 
-        <div class="calendar-date">
 
-            <span>JUL</span>
+  <!-- INAUGURAL DRAFT -->
 
-            <strong>24</strong>
+  <article class="calendar-event">
 
-        </div>
+    <div class="calendar-date">
+      <span>SEP</span>
+      <strong>20</strong>
+    </div>
 
-        <div class="calendar-info">
+    <div class="calendar-info">
 
-            <h4>
+      <h4>Inaugural Salary Cap Draft</h4>
 
-                <a href="/journal/keeper-guide/">
+      <p>
+        21:00 CEST · The first IceCore rosters are built.
+      </p>
 
-                    Keeper Deadline
+    </div>
 
-                </a>
+  </article>
 
-            </h4>
 
-            <p>18:00 CET</p>
+  <!-- OPENING NIGHT -->
 
-        </div>
+  <article class="calendar-event">
 
-    </article>
+    <div class="calendar-date">
+      <span>SEP</span>
+      <strong>29</strong>
+    </div>
 
-    <article class="calendar-event">
+    <div class="calendar-info">
 
-        <div class="calendar-date">
+      <h4>Opening Night</h4>
 
-            <span>AUG</span>
+      <p>
+        The inaugural IceCore Dynasty season begins.
+      </p>
 
-            <strong>02</strong>
+    </div>
 
-        </div>
+  </article>
 
-        <div class="calendar-info">
 
-            <h4>
+  <!-- FUTURE EVENTS -->
 
-                <a href="/journal/expansion-draft-guide/">
+  <div class="calendar-hidden" id="calendar-hidden">
 
-                    Expansion Draft
-
-                </a>
-
-            </h4>
-
-            <p>20:00 CET</p>
-
-        </div>
-
-    </article>
 
     <article class="calendar-event">
 
-        <div class="calendar-date">
+      <div class="calendar-date">
+        <span>2027</span>
+        <strong>—</strong>
+      </div>
 
-            <span>AUG</span>
+      <div class="calendar-info">
 
-            <strong>08</strong>
+        <h4>Keeper Deadline</h4>
 
-        </div>
+        <p>
+          Date to be announced.
+        </p>
 
-        <div class="calendar-info">
-
-            <h4>
-
-                <a href="/journal/entry-draft-guide/">
-
-                    Entry Draft
-
-                </a>
-
-            </h4>
-
-            <p>19:00 CET</p>
-
-        </div>
+      </div>
 
     </article>
 
 
-<div class="calendar-hidden" id="calendar-hidden">
-
     <article class="calendar-event">
 
-        <div class="calendar-date">
-            <span>SEP</span>
-            <strong>04</strong>
-        </div>
+      <div class="calendar-date">
+        <span>2027</span>
+        <strong>—</strong>
+      </div>
 
-        <div class="calendar-info">
-            <h4>Waiver Opens</h4>
-            <p>18:00 CET</p>
-        </div>
+      <div class="calendar-info">
+
+        <h4>IceCore Entry Draft</h4>
+
+        <p>
+          Date to be announced.
+        </p>
+
+      </div>
 
     </article>
 
-    <article class="calendar-event">
-
-        <div class="calendar-date">
-            <span>SEP</span>
-            <strong>12</strong>
-        </div>
-
-        <div class="calendar-info">
-            <h4>Rookie Draft</h4>
-            <p>19:00 CET</p>
-        </div>
-
-    </article>
 
     <article class="calendar-event">
 
-        <div class="calendar-date">
-            <span>SEP</span>
-            <strong>27</strong>
-        </div>
+      <div class="calendar-date">
+        <span>2027</span>
+        <strong>—</strong>
+      </div>
 
-        <div class="calendar-info">
-            <h4>Final Rosters</h4>
-            <p>18:00 CET</p>
-        </div>
+      <div class="calendar-info">
 
-    </article>
+        <h4>Salary Cap Draft</h4>
 
-    <article class="calendar-event">
+        <p>
+          Date to be announced.
+        </p>
 
-        <div class="calendar-date">
-            <span>OCT</span>
-            <strong>02</strong>
-        </div>
-
-        <div class="calendar-info">
-            <h4>League Draft</h4>
-            <p>19:00 CET</p>
-        </div>
+      </div>
 
     </article>
 
-</div>
-<div class="calendar-more">
+  </div>
+
+
+  <div class="calendar-more">
 
     <a href="#" id="calendar-toggle">
-
-        Show Full Schedule ▼
-
+      Show Full Schedule ▼
     </a>
 
-</div>
-<script>
+  </div>
 
-document.addEventListener("DOMContentLoaded", function () {
+
+  <script>
+
+  document.addEventListener("DOMContentLoaded", function () {
 
     const toggle = document.getElementById("calendar-toggle");
-
     const hidden = document.getElementById("calendar-hidden");
+
+    if (!toggle || !hidden) return;
 
     hidden.style.display = "none";
 
-    toggle.addEventListener("click", function(e){
+    toggle.addEventListener("click", function(e) {
 
-        e.preventDefault();
+      e.preventDefault();
 
-        if(hidden.style.display === "none"){
+      if (hidden.style.display === "none") {
 
-            hidden.style.display = "block";
+        hidden.style.display = "block";
+        toggle.innerHTML = "Hide Schedule ▲";
 
-            toggle.innerHTML = "Hide Schedule ▲";
+      } else {
 
-        }else{
+        hidden.style.display = "none";
+        toggle.innerHTML = "Show Full Schedule ▼";
 
-            hidden.style.display = "none";
-
-            toggle.innerHTML = "Show Full Schedule ▼";
-
-        }
+      }
 
     });
 
-});
+  });
 
-</script>
+  </script>
+
 </section>
