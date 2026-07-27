@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Inside the IceCore Entry Draft"
-date: 2026-07-30
+date: 2026-07-27
 categories:
   - draft
 tags:
